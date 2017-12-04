@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Панель елементів</string>
+    <string name="app_name">Легко чистить</string>
     <string name="hello_world">Привіт, народ!</string>
     <string name="menu_settings">Параметри</string>
     <string name="refresh_normal">звичайний</string>
@@ -41,4 +41,8 @@
     <string name="clean_now">Perfect,try again later</string>
     <string name="pd">напълно почистени: %1$s</string>
     <string name="ij">Yскорено</string>
+
+
+    <string name="batter_sleep_s"> second</string>
+    <string name="batter_sleep_m"> minutes</string>
 </resources>

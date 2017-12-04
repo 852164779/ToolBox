@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Trusă de scule</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">bună oameni buni!</string>
 	<string name="menu_settings">Setări</string>
 	<string name="refresh_normal">normală</string>
@@ -40,4 +40,8 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="ij">accelerată</string>
 	<string name="pd">total curăţat: %1$s</string>
+
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

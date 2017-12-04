@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Caixa de ferramentas</string>
+	<string name="app_name">Limpeza fácil</string>
 	<string name="hello_world">Olá, mundo!</string>
 	<string name="menu_settings">Configurações</string>
 	<string name="refresh_normal">normal</string>
@@ -38,6 +38,10 @@
 	<string name="technology">Tecnologia</string>
 	<string name="clean_msg">Clearing up the rubbish %s</string>
 	<string name="clean_now">Perfect,try again later</string>
+
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 
 	<string name="ij">Otimizado</string>
 	<string name="pd">Total Apagado: %1$s</string>

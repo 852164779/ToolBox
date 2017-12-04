@@ -2,7 +2,7 @@
 <resources>
 	<string name="about">am</string>
 	<string name="action_settings">Gosodiadau</string>
-	<string name="app_name">Blwch offer</string>
+	<string name="app_name">Pulizia facile</string>
 	<string name="bluetooth">BlueTooth</string>
 	<string name="calculator_invalid_format">Fformat annilys</string>
 	<string name="change_screen_light">Rheoli disgleirdeb sgrin</string>
@@ -41,4 +41,7 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="pd">puhdistettu yhteensä: %1$s</string>
 	<string name="ij">nopeutettu</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

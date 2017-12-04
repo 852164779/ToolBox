@@ -13,7 +13,7 @@
         android:layout_height="0dp"
         android:layout_weight="3">
 
-        <com.global.toolbox.storage.RippleImageView
+        <com.newfresh.easyclean.custom.RippleImageView
             android:id="@+id/ramLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,7 +25,7 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true">
 
-            <com.global.toolbox.storage.ColorfulRingProgressView
+            <com.newfresh.easyclean.custom.ColorfulRingProgressView
                 android:id="@+id/ramProgress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -107,11 +107,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="15dp">
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp" >
 
-            <com.global.toolbox.storage.ColorfulRingProgressView
+            <com.newfresh.easyclean.custom.ColorfulRingProgressView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/romProgress"
                 android:layout_width="wrap_content"
@@ -153,11 +152,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="15dp"
-            android:layout_marginRight="15dp">
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp" >
 
-            <com.global.toolbox.storage.ColorfulRingProgressView
+            <com.newfresh.easyclean.custom.ColorfulRingProgressView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/cpuProgress"
                 android:layout_width="wrap_content"
@@ -202,17 +200,18 @@
             android:background="@color/transparent"
             android:gravity="center"
             android:text="@string/pd"
-            android:textColor="@color/base_bottom_text"
+            android:textColor="@color/ram_back"
             android:textSize="@dimen/base_cache"/>
 
     </RelativeLayout>
+
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2">
 
-        <com.global.toolbox.waveview.WaveView
+        <com.newfresh.easyclean.custom.WaveView
             android:id="@+id/waveview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
@@ -234,14 +233,15 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center">
+
                     <ImageView
-                        android:padding="5dp"
-                        android:background="@drawable/btn_click_style"
                         android:id="@+id/light"
                         android:layout_width="@dimen/base_img"
                         android:layout_height="@dimen/base_img"
+                        android:background="@drawable/btn_click_style"
                         android:onClick="baseOnClick"
-                        android:src="@drawable/icon_light_1"
+                        android:padding="5dp"
+                        android:src="@drawable/main_1"
                         tools:ignore="ContentDescription"/>
 
                 </LinearLayout>
@@ -250,7 +250,7 @@
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
-                    android:background="#5068b9FF"/>
+                    android:background="@color/main_line"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -259,13 +259,13 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:padding="5dp"
-                        android:background="@drawable/btn_click_style"
                         android:id="@+id/mirror"
                         android:layout_width="@dimen/base_img"
                         android:layout_height="@dimen/base_img"
+                        android:background="@drawable/btn_click_style"
                         android:onClick="baseOnClick"
-                        android:src="@drawable/icon_mirro_1"
+                        android:padding="5dp"
+                        android:src="@drawable/main_2"
                         tools:ignore="ContentDescription"/>
 
                 </LinearLayout>
@@ -274,7 +274,7 @@
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
-                    android:background="#5068b9FF"/>
+                    android:background="@color/main_line"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -283,13 +283,13 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:padding="5dp"
-                        android:background="@drawable/btn_click_style"
                         android:id="@+id/calculator"
                         android:layout_width="@dimen/base_img"
                         android:layout_height="@dimen/base_img"
+                        android:background="@drawable/btn_click_style"
                         android:onClick="baseOnClick"
-                        android:src="@drawable/icon_jisuan_1"
+                        android:padding="5dp"
+                        android:src="@drawable/main_3"
                         tools:ignore="ContentDescription"/>
                 </LinearLayout>
 
@@ -300,7 +300,7 @@
                 android:layout_height="1dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="#5068b9FF"/>
+                android:background="@color/main_line"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -315,13 +315,13 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:padding="5dp"
-                        android:background="@drawable/btn_click_style"
                         android:id="@+id/clock"
                         android:layout_width="@dimen/base_img"
                         android:layout_height="@dimen/base_img"
+                        android:background="@drawable/btn_click_style"
                         android:onClick="baseOnClick"
-                        android:src="@drawable/icon_time_1"
+                        android:padding="5dp"
+                        android:src="@drawable/main_4"
                         tools:ignore="ContentDescription"/>
 
                 </LinearLayout>
@@ -330,7 +330,7 @@
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="20dp"
-                    android:background="#5068b9FF"/>
+                    android:background="@color/main_line"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -339,13 +339,13 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:padding="5dp"
-                        android:background="@drawable/btn_click_style"
                         android:id="@+id/camera"
                         android:layout_width="@dimen/base_img"
                         android:layout_height="@dimen/base_img"
+                        android:background="@drawable/btn_click_style"
                         android:onClick="baseOnClick"
-                        android:src="@drawable/icon_zoom_1"
+                        android:padding="5dp"
+                        android:src="@drawable/main_5"
                         tools:ignore="ContentDescription"/>
 
                 </LinearLayout>
@@ -354,7 +354,7 @@
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="20dp"
-                    android:background="#5068b9FF"/>
+                    android:background="@color/main_line"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -363,13 +363,13 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:padding="5dp"
-                        android:background="@drawable/btn_click_style"
                         android:id="@+id/battery"
                         android:layout_width="@dimen/base_img"
                         android:layout_height="@dimen/base_img"
+                        android:background="@drawable/btn_click_style"
                         android:onClick="baseOnClick"
-                        android:src="@drawable/icon_battery_1"
+                        android:padding="5dp"
+                        android:src="@drawable/main_6"
                         tools:ignore="ContentDescription"/>
                 </LinearLayout>
             </LinearLayout>

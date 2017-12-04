@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">उपकरण बॉक्स</string>
+	<string name="app_name">आसान साफ</string>
 	<string name="hello_world">हैलो वर्ल्ड!</string>
 	<string name="menu_settings">सेटिंग्स</string>
 	<string name="refresh_normal">सामान्य</string>
@@ -41,4 +41,7 @@
 	<string name="clean_now">Perfect,try again later</string>
 	<string name="pd">कुल साफ: %1$s</string>
 	<string name="ij">त्वरित</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

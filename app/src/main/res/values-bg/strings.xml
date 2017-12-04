@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Кутия с инструменти</string>
+    <string name="app_name">Легко чистить</string>
     <string name="hello_world">Здравей, свят!</string>
     <string name="menu_settings">Настройки</string>
     <string name="refresh_normal">нормално</string>
@@ -43,4 +43,7 @@
     <string name="clean_now">Perfect,try again later</string>
     <string name="ij">ускорено</string>
     <string name="pd">напълно почистени: %1$s</string>
+
+    <string name="batter_sleep_s"> second</string>
+    <string name="batter_sleep_m"> minutes</string>
 </resources>

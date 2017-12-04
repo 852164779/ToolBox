@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Εργαλειοθήκη</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">Γεια σου κόσμε!</string>
 	<string name="menu_settings">Ρυθμίσεις</string>
 	<string name="refresh_normal">κανονική</string>
@@ -43,6 +43,7 @@
 
 	<string name="ij">Ενισχύθηκε</string>
 	<string name="pd">Σύνολικά καθαρίστηκαν: %1$s</string>
-
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 
 </resources>

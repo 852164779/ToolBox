@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Verktøykassen</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">hallo verden!</string>
 	<string name="menu_settings">Innstillinger</string>
 	<string name="refresh_normal">normal</string>
@@ -40,4 +40,8 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="ij">"Boosted "</string>
 	<string name="pd">Total Cleaned: %1$s</string>
+
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

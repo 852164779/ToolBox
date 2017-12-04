@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">กล่องเครื่องมือ</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">หวัดดีชาวโลก!</string>
 	<string name="menu_settings">การตั้งค่า</string>
 	<string name="refresh_normal">ปกติ</string>
@@ -40,5 +40,9 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="ij">ได้เร่ง</string>
 	<string name="pd">ทั้งหมดทำความสะอาด: %1$s</string>
+
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">ToolBox</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">čaute všetci!</string>
 	<string name="menu_settings">Nastavenia</string>
 	<string name="refresh_normal">normálne</string>
@@ -41,4 +41,8 @@
 
 	<string name="ij">Pamäť uvolnená</string>
 	<string name="pd">Celkovo vyčistených: %1$s</string>
+
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

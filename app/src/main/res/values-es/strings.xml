@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Caja de herramientas</string>
-	<string name="hello_world">¡Hola mundo!</string>
+	<string name="app_name">Limpieza fácil</string>
+	<string name="hello_world">Limpieza fácil</string>
 	<string name="menu_settings">Configuración</string>
 	<string name="refresh_normal">normal</string>
 	<string name="current_power">La energía restante en la actual</string>
@@ -41,4 +41,7 @@
 
 	<string name="pd">Total limpiado: %1$s</string>
 	<string name="ij">Acelerado</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

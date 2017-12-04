@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Zestaw narzędzi</string>
+	<string name="app_name">Łatwe do czyszczenia</string>
 	<string name="hello_world">Cześć ludzie!</string>
 	<string name="menu_settings">Ustawienia</string>
 	<string name="refresh_normal">normalne</string>
@@ -41,4 +41,8 @@
 
 	<string name="ij">Przyspieszono</string>
 	<string name="pd">Wyczyszczono łącznie: %1$s</string>
+
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

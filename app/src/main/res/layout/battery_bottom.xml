@@ -29,7 +29,7 @@
             android:id="@+id/battery_screen_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/battery_off"/>
+            android:src="@drawable/battery_switch_grey"/>
 
     </LinearLayout>
 
@@ -175,7 +175,7 @@
             android:id="@+id/battery_gps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/battery_on"/>
+            android:src="@drawable/battery_switch_green"/>
 
     </LinearLayout>
 

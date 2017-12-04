@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Eszközkészlet</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">helló világ!</string>
 	<string name="menu_settings">Beállítások</string>
 	<string name="refresh_normal">normál</string>
@@ -41,4 +41,7 @@
 
 	<string name="pd">Összesen felszabadítva: %1$s</string>
 	<string name="ij">felgyorsult</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

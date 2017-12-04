@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Orodjarna</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">pozdravljeni vsi skupaj!</string>
 	<string name="menu_settings">Nastavitve</string>
 	<string name="refresh_normal">normalno</string>
@@ -41,4 +41,6 @@
     <string name="ij">pospešiti.</string>
 	<string name="pd">popolnoma očiščena: %1$s</string>
 
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

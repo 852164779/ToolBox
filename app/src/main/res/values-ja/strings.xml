@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">ツールボックス</string>
+	<string name="app_name">イージークリーン</string>
 	<string name="hello_world">ハローワールド！</string>
 	<string name="menu_settings">設定</string>
 	<string name="refresh_normal">通常</string>
@@ -41,4 +41,7 @@
 
 	<string name="pd">クリーニング 済み合計: %1$s</string>
 	<string name="ij">加速されました</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

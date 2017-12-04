@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Araç kutusu</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">Merhaba Dünya!</string>
 	<string name="menu_settings">Ayarlar</string>
 	<string name="refresh_normal">normal</string>
@@ -41,4 +41,8 @@
 
 	<string name="ij">Günçlendirildi</string>
 	<string name="pd">Toplam Temizlenen: %1$s</string>
+
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

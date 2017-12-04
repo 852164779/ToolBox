@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Boîte à outils</string>
+	<string name="app_name">Nettoyage facile</string>
 	<string name="hello_world">Salut tout le monde !</string>
 	<string name="menu_settings">Paramètres</string>
 	<string name="refresh_normal">normal</string>
@@ -41,4 +41,7 @@
 
 	<string name="ij">a accéléré</string>
 	<string name="pd">Total nettoyé : %1$s</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Casella degli strumenti</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">Salve, mondo!</string>
 	<string name="menu_settings">Impostazioni</string>
 	<string name="refresh_normal">normale</string>
@@ -41,4 +41,7 @@
 
 	<string name="pd">Totale Pulito: %1$s</string>
 	<string name="ij">Velocizzato</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

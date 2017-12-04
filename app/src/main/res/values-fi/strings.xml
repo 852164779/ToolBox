@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">ToolBox</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">Moi maailma!</string>
 	<string name="menu_settings">Asetukset</string>
 	<string name="refresh_normal">Normaali</string>
@@ -41,4 +41,7 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="pd">puhdistettu yhteensä: %1$s</string>
 	<string name="ij">nopeutettu</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

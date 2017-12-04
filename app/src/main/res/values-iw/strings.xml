@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">ארגז הכלים</string>
+	<string name="app_name">ניקוי קל</string>
 	<string name="hello_world">שלום לך עולם!</string>
 	<string name="menu_settings">הגדרות</string>
 	<string name="refresh_normal">רגיל</string>
@@ -40,4 +40,7 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="ij">הואץ</string>
 	<string name="pd">סה כ לנקות: %1$s</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

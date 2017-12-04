@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Hộp công cụ</string>
+    <string name="app_name">"Dễ dàng làm sạch "</string>
     <string name="hello_world">Chào thế giới!</string>
     <string name="menu_settings">Cài đặt</string>
     <string name="refresh_normal">bình thường</string>
@@ -42,5 +42,9 @@
 
     <string name="ij">Đã tăng tốc</string>
     <string name="pd">Dọn sạch toàn bộ.: %1$s</string>
+
+
+    <string name="batter_sleep_s"> second</string>
+    <string name="batter_sleep_m"> minutes</string>
 
 </resources>

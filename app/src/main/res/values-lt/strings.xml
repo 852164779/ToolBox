@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">Įrankių komplektas</string>
+	<string name="app_name">Easyclean</string>
 	<string name="hello_world">sveikas, pasauli!</string>
 	<string name="menu_settings">Parametrai</string>
 	<string name="refresh_normal">normalus</string>
@@ -40,4 +40,7 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="ij">beschleunigte</string>
 	<string name="pd">insgesamt haben: %1$s</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

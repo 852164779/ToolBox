@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">جعبه ابزار</string>
+	<string name="app_name">سهل التنظيف</string>
 	<string name="hello_world">سلام به دنیا!</string>
 	<string name="menu_settings">تنظیمات</string>
 	<string name="refresh_normal">طبیعی</string>
@@ -41,4 +41,7 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="pd">كامل المُنظف: %1$s</string>
 	<string name="ij">تم تسريعها</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

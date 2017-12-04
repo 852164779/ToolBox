@@ -26,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/div_top"
         android:layout_marginTop="@dimen/div_top"
-        android:background="@drawable/battery_big"
+        android:background="@drawable/battery_bg_grey"
         android:gravity="center_vertical"
         >
 

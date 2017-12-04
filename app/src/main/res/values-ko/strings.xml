@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">도구 상자</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">전 세계 여러분 안녕하세요!</string>
 	<string name="menu_settings">설정</string>
 	<string name="refresh_normal">일반</string>
@@ -41,4 +41,7 @@
 
 	<string name="ij">부스트 되었습니다</string>
 	<string name="pd">총 정리됨: %1$s</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

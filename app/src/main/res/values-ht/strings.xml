@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<string name="app_name">À</string>
+	<string name="app_name">EasyClean</string>
 	<string name="hello_world">Bonjou mond la!</string>
 	<string name="menu_settings">Nòmal</string>
 	<string name="refresh_normal">nòmal</string>
@@ -42,4 +42,7 @@
 	<string name="clean_now">Perfect,try again later</string>
     <string name="pd">Total nettoyé : %1$s</string>
 	<string name="ij">a accéléré</string>
+
+	<string name="batter_sleep_s"> second</string>
+	<string name="batter_sleep_m"> minutes</string>
 </resources>

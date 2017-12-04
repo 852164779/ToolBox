@@ -20,7 +20,6 @@
     <color name="red">#ff0000</color>
     <color name="battery_low">#f57777</color>
 
-
     <item name="white" type="color">#FFFFFFFF</item>
     <item name="orange_text" type="color">#FF7F24</item>
     <item name="orange_bg" type="color">#FF9933</item>
@@ -36,16 +35,18 @@
     <color name="battery_text">#748093</color>
 
     <color name="ring_back">#f1f1f1</color>
-    <color name="ram_back">#1ca0ec</color>
 
     <color name="base_back">#ff00ddff</color>
+    <color name="ram_back">#FF00a79d</color>
+    <color name="ram_back_">#FF57DED5</color>
     <color name="warn_green">#24d1c7</color>
     <color name="warn_yellow">#ffc745</color>
     <color name="warn_red">#d1301e</color>
     <color name="base_text">#a9a9a9</color>
     <color name="base_bottom_text">#3cbcf9</color>
 
-    <color name="click_color">#1f97e7</color>
-    <color name="nomal_color">#00000000</color>
+    <color name="click_color">#008e85</color>
+    <color name="main_line">#10af9c</color>
+
     <item name="calculator_back" type="color">#D1D1D1</item>
 </resources>
