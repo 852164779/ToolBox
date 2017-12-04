@@ -1,88 +1,69 @@
 apply plugin: 'com.android.application'
 
-//buildscript {
-//    repositories {
-//        maven { url 'https://maven.fabric.io/public' }
-//    }
-//
-//    dependencies {
-//        classpath 'io.fabric.tools:gradle:1.+'
-//    }
-//}
-//apply plugin: 'io.fabric'
-//
-//repositories {
-//    maven { url 'https://maven.fabric.io/public' }
-//}
-
 android {
     compileSdkVersion 22
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
 
     signingConfigs {
         releaseConfig {
-            keyAlias "key11"
-            keyPassword "123456"
-            storeFile file("D:\\key\\tool_game.jks")
-            storePassword "123456"
+            keyAlias 'key4'
+            keyPassword '123456'
+            storeFile file('D:\\key\\tool_game.jks')
+            storePassword '123456'
         }
     }
 
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 10
-        versionName "1.10"
+
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
-            //Zipalign优化
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.releaseConfig
         }
+
         debug {
             minifyEnabled false
             shrinkResources false
-            //Zipalign优化
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [CID: "D0001", TYPE: "true"]
+            manifestPlaceholders = [CID: "D0001", TYPE: "1011"]
             signingConfig signingConfigs.releaseConfig
         }
     }
     productFlavors {
+//        1011:渠道、1012:GP、1013:DDL、1014:SDK
 
-//        TYPE true:渠道、false:DDL
-        toolbox_ddl {
-            applicationId "com.dygp.toolbox"
+        D0001_ALL {
+            applicationId "com.dyve0001.toolbox"
             dimension "default"
-            manifestPlaceholders = [CID: "D0118", TYPE: "false"]
+            manifestPlaceholders = [CID: "D0001", TYPE: "1011"]
         }
 
-        com_dyve_toolbox_d0001 {
-            applicationId "com.dyve.toolbox.d0001"
-            dimension "default"
-            manifestPlaceholders = [CID: "D0001", TYPE: "true"]
-        }
-
-//        com_dyve_toolbox_d0343 {
-//            applicationId "com.dyve.toolbox.d0343"
+//        com_dyve_d0156toolbox {
+//            applicationId "com.dyve.d0156toolbox"
 //            dimension "default"
-//            manifestPlaceholders = [CID: "D0343", TYPE: "true"]
+//            manifestPlaceholders = [CID: "D0156", D_LOG: "false"]
 //        }
-//        com_dyve_toolbox_d0338 {
-//            applicationId "com.dyve.toolbox.d0338"
+//
+//        com_dyve_d0157toolbox {
+//            applicationId "com.dyve.d0157toolbox"
 //            dimension "default"
-//            manifestPlaceholders = [CID: "D0338", TYPE: "true"]
+//            manifestPlaceholders = [CID: "D0157", D_LOG: "false"]
 //        }
-//        com_dyve_toolbox_d0339 {
-//            applicationId "com.dyve.toolbox.d0339"
+//
+//        com_dyve_d0158toolbox {
+//            applicationId "com.dyve.d0158toolbox"
 //            dimension "default"
-//            manifestPlaceholders = [CID: "D0339", TYPE: "true"]
+//            manifestPlaceholders = [CID: "D0158", D_LOG: "false"]
 //        }
     }
 
@@ -90,13 +71,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':sublib')
-//    testCompile 'junit:junit:4.12'
-    // compile 'com.android.support:support-v4:26.0.0-alpha1'
-    // compile project(':library')
-    // compile 'com.appsflyer:af-android-sdk:4+@aar'
-    // compile 'com.google.android.gms:play-services-ads:11.0.4'
-    // compile 'com.google.android.gms:play-services-gcm:11.0.4'
-    // com.google.android.gms:play-services-ads:8.4.+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':sublibrary')
 }
