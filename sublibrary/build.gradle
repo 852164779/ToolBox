@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+//        ndk {
+//            moduleName "signUtil"
+//            ldLibs "log"
+//            abiFilters "armeabi"
+//        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.releaseConfig
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'com.squareup.okhttp3:okhttp:3.3.0'
+}
+
+//SDK打包
+def SDK_BASENAME = "sub_sdk";
+def SDK_VERSION = "-1.1.0";
+def sdkDestinationPath = "build/outputs/jar/";
+def zipFile = file('build/intermediates/bundles/release/classes.jar')
+
+task deleteBuild(type: Delete) {
+    delete sdkDestinationPath + SDK_BASENAME + SDK_VERSION + ".jar"
+}
+
+task makeJar(type: Jar, dependsOn: "build") {
+    from zipTree(zipFile)
+    from fileTree(dir: 'src/main', includes: ['assets/**.png'])//将assets目录打入jar包
+
+    exclude('text/', 'Dynamic.class', 'R.class', 'BuildConfig.class')
+
+    baseName = SDK_BASENAME + SDK_VERSION
+    destinationDir = file(sdkDestinationPath)
+}
+
+makeJar.dependsOn(deleteBuild, build)
