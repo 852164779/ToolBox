@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#000000</color>
+    <color name="click_style">#00000000</color>
+    <color name="click_style_press">#22000000</color>
+    <color name="screen_ad_color">#44000000</color>
+    <color name="screen_background_color">#88000000</color>
+    <color name="transparent">#00000000</color>
+    <integer name="col_count">3</integer>
+    <string name="app_name">Library</string>
+    <string name="clean_msg">Clearing up the rubbish %s</string>
+    <string name="clean_now">Perfect,try again later</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">1b5d354b-01a0-4c98-81f3-618a5e61bf3d</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="App_Theme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme1.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>  
+        
+  
+    </style>
+</resources>
