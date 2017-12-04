@@ -38,7 +38,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.global.toolbox.R;
 import com.oom.tblib.clean.CleanService;
 import com.oom.tblib.clean.OnPeocessActionListenerAdapter;
 import com.oom.tblib.tasks.ClickShowTask;
