@@ -11,9 +11,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3">
+        android:layout_weight="3" >
 
-        <com.xxm.toolbox.storage.RippleImageView
+        <com.global.toolbox.storage.RippleImageView
             android:id="@+id/ramLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,7 +25,7 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true">
 
-            <com.xxm.toolbox.storage.ColorfulRingProgressView
+            <com.global.toolbox.storage.ColorfulRingProgressView
                 android:id="@+id/ramProgress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,16 +51,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:paddingTop="3dp"
-                        android:textSize="@dimen/base_text"/>
+                        android:textSize="@dimen/base_text"
+                        android:paddingTop="3dp"/>
 
                     <TextView
                         android:id="@+id/ramText_Pro_"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/base_text"
                         android:gravity="center"
-                        android:paddingTop="3dp"
-                        android:textSize="@dimen/base_text"/>
+                        android:paddingTop="3dp"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -111,7 +111,7 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="15dp">
 
-            <com.xxm.toolbox.storage.ColorfulRingProgressView
+            <com.global.toolbox.storage.ColorfulRingProgressView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/romProgress"
                 android:layout_width="wrap_content"
@@ -157,7 +157,7 @@
             android:layout_marginBottom="15dp"
             android:layout_marginRight="15dp">
 
-            <com.xxm.toolbox.storage.ColorfulRingProgressView
+            <com.global.toolbox.storage.ColorfulRingProgressView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/cpuProgress"
                 android:layout_width="wrap_content"
@@ -200,170 +200,160 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@color/transparent"
-            android:gravity="center"
             android:text="@string/pd"
             android:textColor="@color/base_bottom_text"
+            android:gravity="center"
             android:textSize="@dimen/base_cache"/>
 
     </RelativeLayout>
 
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2">
-
-        <com.xxm.toolbox.waveview.WaveView
-            android:id="@+id/waveview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+        android:layout_weight="2"
+        android:background="@drawable/base_back_bottom"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingTop="30dp">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:gravity="center">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/calculator"
-                        android:layout_width="@dimen/base_img"
-                        android:layout_height="@dimen/base_img"
-                        android:onClick="baseOnClick"
-                        android:src="@drawable/icon_jisuan_1"
-                        tools:ignore="ContentDescription"/>
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:background="#5068b9FF"/>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/mirror"
-                        android:layout_width="@dimen/base_img"
-                        android:layout_height="@dimen/base_img"
-                        android:onClick="baseOnClick"
-                        android:src="@drawable/icon_mirro_1"
-                        tools:ignore="ContentDescription"/>
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:background="#5068b9FF"/>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/light"
-                        android:layout_width="@dimen/base_img"
-                        android:layout_height="@dimen/base_img"
-                        android:onClick="baseOnClick"
-                        android:src="@drawable/icon_light_1"
-                        tools:ignore="ContentDescription"/>
-                </LinearLayout>
+                <ImageView
+                    android:id="@+id/calculator"
+                    android:layout_width="@dimen/base_img"
+                    android:layout_height="@dimen/base_img"
+                    android:onClick="baseOnClick"
+                    android:src="@drawable/icon_calculator"
+                    tools:ignore="ContentDescription"/>
 
             </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:background="#5068b9FF"/>
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#5068b9FF" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:gravity="center">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                <ImageView
+                    android:id="@+id/mirror"
+                    android:layout_width="@dimen/base_img"
+                    android:layout_height="@dimen/base_img"
+                    android:onClick="baseOnClick"
+                    android:src="@drawable/icon_mirror"
+                    tools:ignore="ContentDescription"/>
 
-                    <ImageView
-                        android:id="@+id/battery"
-                        android:layout_width="@dimen/base_img"
-                        android:layout_height="@dimen/base_img"
-                        android:onClick="baseOnClick"
-                        android:src="@drawable/icon_battery_1"
-                        tools:ignore="ContentDescription"/>
+            </LinearLayout>
 
-                </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="#5068b9FF" />
 
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="20dp"
-                    android:background="#5068b9FF"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/camera"
-                        android:layout_width="@dimen/base_img"
-                        android:layout_height="@dimen/base_img"
-                        android:onClick="baseOnClick"
-                        android:src="@drawable/icon_zoom_1"
-                        tools:ignore="ContentDescription"/>
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="20dp"
-                    android:background="#5068b9FF"/>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/clock"
-                        android:layout_width="@dimen/base_img"
-                        android:layout_height="@dimen/base_img"
-                        android:onClick="baseOnClick"
-                        android:src="@drawable/icon_time_1"
-                        tools:ignore="ContentDescription"/>
-                </LinearLayout>
+                <ImageView
+                    android:id="@+id/light"
+                    android:layout_width="@dimen/base_img"
+                    android:layout_height="@dimen/base_img"
+                    android:onClick="baseOnClick"
+                    android:src="@drawable/icon_light"
+                    tools:ignore="ContentDescription"/>
             </LinearLayout>
 
         </LinearLayout>
-    </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#5068b9FF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/battery"
+                    android:layout_width="@dimen/base_img"
+                    android:layout_height="@dimen/base_img"
+                    android:onClick="baseOnClick"
+                    android:src="@drawable/icon_battery"
+                    tools:ignore="ContentDescription"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#5068b9FF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/camera"
+                    android:layout_width="@dimen/base_img"
+                    android:layout_height="@dimen/base_img"
+                    android:onClick="baseOnClick"
+                    android:src="@drawable/icon_magnifier"
+                    tools:ignore="ContentDescription"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#5068b9FF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/clock"
+                    android:layout_width="@dimen/base_img"
+                    android:layout_height="@dimen/base_img"
+                    android:onClick="baseOnClick"
+                    android:src="@drawable/icon_clock"
+                    tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>

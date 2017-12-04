@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/white"
-              android:orientation="horizontal">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
 
     <TextView
         android:id="@+id/text_title"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center|left"
+        android:gravity="center|start"
         android:paddingLeft="20dp"
         android:text="@string/app_name"
         android:textColor="@color/ram_back"
         android:textSize="@dimen/size_title"
         android:textStyle="bold"/>
 
+
     <RelativeLayout
         android:id="@+id/about_Lay"
         android:layout_width="60dp"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:onClick="baseOnClick">
 
         <ImageView
@@ -30,6 +31,5 @@
             android:layout_height="25dp"
             android:layout_centerInParent="true"
             android:src="@drawable/gift"/>
-
     </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

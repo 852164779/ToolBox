@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/white"
-              android:orientation="horizontal">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="20dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/ram_back"
+        android:textSize="@dimen/size_title"
+        android:textStyle="bold"/>
 
     <RelativeLayout
         android:id="@+id/about_Lay"
         android:layout_width="60dp"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
         android:onClick="baseOnClick">
 
         <ImageView
@@ -20,16 +30,4 @@
             android:src="@drawable/gift"/>
 
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/text_title"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center|end"
-        android:paddingEnd="20dp"
-        android:text="@string/app_name"
-        android:textColor="@color/ram_back"
-        android:textSize="@dimen/size_title"
-        android:textStyle="bold"/>
-</LinearLayout>
+</RelativeLayout>

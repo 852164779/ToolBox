@@ -2,75 +2,59 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "25.0.3"
+    buildToolsVersion '25.0.2'
 
     signingConfigs {
         releaseConfig {
-            keyAlias 'key4'
-            keyPassword '123456'
-            storeFile file('D:\\key\\tool_game.jks')
-            storePassword '123456'
+            keyAlias "key11"
+            keyPassword "123456"
+            storeFile file("D:\\key\\tool_game.jks")
+            storePassword "123456"
         }
     }
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 22
-
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.3"
     }
-
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
+            //Zipalign优化
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.releaseConfig
         }
-
         debug {
             minifyEnabled false
             shrinkResources false
+            //Zipalign优化
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            manifestPlaceholders = [CID: "D0001", TYPE: "1011"]
+            manifestPlaceholders = [CID: "D0000", D_LOG: "true"]
             signingConfig signingConfigs.releaseConfig
         }
     }
     productFlavors {
-//        1011:渠道、1012:GP、1013:DDL、1014:SDK
 
-        D0001_ALL {
-            applicationId "com.dyve0001.toolbox"
+        com_arrkii_toolbox {
+            applicationId "com.Arrkii.toolbox"
             dimension "default"
-            manifestPlaceholders = [CID: "D0001", TYPE: "1011"]
+            manifestPlaceholders = [CID: "Arrkii", D_LOG: "true"]
         }
 
-//        com_dyve_d0156toolbox {
-//            applicationId "com.dyve.d0156toolbox"
-//            dimension "default"
-//            manifestPlaceholders = [CID: "D0156", D_LOG: "false"]
-//        }
-//
-//        com_dyve_d0157toolbox {
-//            applicationId "com.dyve.d0157toolbox"
-//            dimension "default"
-//            manifestPlaceholders = [CID: "D0157", D_LOG: "false"]
-//        }
-//
-//        com_dyve_d0158toolbox {
-//            applicationId "com.dyve.d0158toolbox"
-//            dimension "default"
-//            manifestPlaceholders = [CID: "D0158", D_LOG: "false"]
-//        }
-    }
 
+    }
     //gradle assembleRelease
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile files('libs/Arrkii_native_SDK_v1.6.2.jar')
     compile project(':sublibrary')
 }

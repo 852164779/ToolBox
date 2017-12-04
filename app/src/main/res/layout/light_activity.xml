@@ -5,7 +5,6 @@
                 android:layout_height="match_parent"
                 android:background="@color/te_img_top"
     >
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +24,9 @@
             android:layout_above="@+id/te_img_center"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
-            android:src="@drawable/lamp" />
+            android:src="@drawable/lamp"
+
+            />
 
         <ImageView
             android:id="@+id/te_img_right"
@@ -92,7 +93,6 @@
             android:layout_height="match_parent"
             android:layout_below="@id/te_img_left_bottom"
             android:layout_centerHorizontal="true">
-
             <ImageView
                 android:id="@+id/light_flashing"
                 android:layout_width="50dp"
@@ -111,12 +111,10 @@
         android:orientation="horizontal"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
-
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
-
         <ImageView
             android:id="@+id/back_light"
             android:layout_width="wrap_content"

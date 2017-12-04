@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
     <color name="transparent">#00000000</color>
 
     <color name="te_img_right">#edbe6c</color>
@@ -43,7 +44,4 @@
     <color name="warn_red">#d1301e</color>
     <color name="base_text">#a9a9a9</color>
     <color name="base_bottom_text">#3cbcf9</color>
-
-    <color name="click_color">#1f97e7</color>
-    <color name="nomal_color">#00000000</color>
 </resources>
