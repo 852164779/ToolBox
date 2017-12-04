@@ -1,1 +1,1 @@
-include ':app', ':sublib'
+include ':app', ':clgdlib'

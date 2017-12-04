@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="clean_msg">Clearing up the rubbish %s</string>
+    <string name="clean_now">Perfect,try again later</string>
+    <string name="gp_e1">Google Play connection failed</string>
+    <string name="gp_e2">Cannot be called from the main thread</string>
+</resources>

@@ -36,9 +36,9 @@
     <color name="battery_text">#748093</color>
 
     <color name="ring_back">#f1f1f1</color>
-    <color name="ram_back">#1ca0ec</color>
 
     <color name="base_back">#ff00ddff</color>
+    <color name="ram_back">#1ca0ec</color>
     <color name="warn_green">#24d1c7</color>
     <color name="warn_yellow">#ffc745</color>
     <color name="warn_red">#d1301e</color>

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+
+//buildscript {
+//    repositories {
+//        maven { url 'https://maven.fabric.io/public' }
+//    }
+//    dependencies {
+//        classpath 'io.fabric.tools:gradle:1.23.0'
+//    }
+//}
+//apply plugin: 'io.fabric'
+//
+//repositories {
+//    maven { url 'https://maven.fabric.io/public' }
+//}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "26.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 13
+        versionName "1.13"
+
+        ndk {
+            moduleName "sub"
+            ldLibs "log"
+            abiFilters "armeabi"
+        }
+    }
+
+//    sourceSets.main{
+//        jniLibs.srcDir 'libs'
+//        jni.srcDirs = []
+//    }
+//
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a' //select ABIs to build APKs for
+//            universalApk true //generate an additional APK that contains all the ABIs
+//        }
+//    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+//        transitive = true;
+//    }
+}
