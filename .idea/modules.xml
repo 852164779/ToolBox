@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/clgdlib/clgdlib.iml" filepath="$PROJECT_DIR$/clgdlib/clgdlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/sublib/sublib.iml" filepath="$PROJECT_DIR$/sublib/sublib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sublib/sublib.iml" filepath="$PROJECT_DIR$/sublib/sublib.iml" />
     </modules>
   </component>
 </project>
