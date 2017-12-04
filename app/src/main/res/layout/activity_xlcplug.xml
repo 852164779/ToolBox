@@ -32,6 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
+
                 <include
                     layout="@layout/x_webview_error_layout"
                     android:visibility="gone"/>
@@ -51,6 +52,7 @@
                         android:layout_gravity="center"
                         android:indeterminateBehavior="repeat"
                         android:indeterminateDrawable="@drawable/x_progress_style"/>
+
 
                     <TextView
                         android:id="@+id/xlc_text_center"
