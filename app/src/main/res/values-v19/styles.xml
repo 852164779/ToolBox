@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseActivityTitle" parent="@android:style/Theme.Light">
+        <item name="android:windowTitleSize">40sp</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTitleBackgroundStyle">@color/white</item>
+    </style>
+</resources>
