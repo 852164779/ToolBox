@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion '25.0.3'
+    buildToolsVersion '25.0.2'
 
     signingConfigs {
         releaseConfig {
@@ -16,14 +16,14 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 13
+        versionName "1.14"
     }
-
     buildTypes {
         release {
             minifyEnabled true
             shrinkResources true
+            //Zipalign优化
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.releaseConfig
@@ -31,6 +31,7 @@ android {
         debug {
             minifyEnabled false
             shrinkResources false
+            //Zipalign优化
             zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             manifestPlaceholders = [CID: "D0001", D_LOG: "true"]
@@ -39,29 +40,12 @@ android {
     }
     productFlavors {
 
-        D0001 {
-            applicationId "com.dyve.d0001toolbox"
+        google_p {
+            applicationId "com.dygp.toolbox"
             dimension "default"
             manifestPlaceholders = [CID: "D0001", D_LOG: "true"]
         }
 
-//        com_dyve_d0171toolbox {
-//            applicationId "com.dyve.d0171toolbox"
-//            dimension "default"
-//            manifestPlaceholders = [CID: "D0171", D_LOG: "false"]
-//        }
-//
-//        com_dyve_d0173toolbox {
-//            applicationId "com.dyve.d0173toolbox"
-//            dimension "default"
-//            manifestPlaceholders = [CID: "D0173", D_LOG: "false"]
-//        }
-//
-//        com_dyve_d0172toolbox {
-//            applicationId "com.dyve.d0172toolbox"
-//            dimension "default"
-//            manifestPlaceholders = [CID: "D0172", D_LOG: "false"]
-//        }
     }
 
     //gradle assembleRelease
@@ -69,8 +53,14 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':sublibrary')
     testCompile 'junit:junit:4.12'
-//    compile 'com.android.support:support-v4:26+'
-//    compile 'com.android.support:appcompat-v7:22+'
+    compile project(':sublibrary')
+
+//    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    // compile project(':library')
+    // compile 'com.appsflyer:af-android-sdk:4+@aar'
+    // compile 'com.google.android.gms:play-services-ads:11.0.4'
+    // compile 'com.google.android.gms:play-services-gcm:11.0.4'
+    //  com.google.android.gms:play-services-ads:8.4.+
+
 }

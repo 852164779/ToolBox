@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
     <color name="transparent">#00000000</color>
 
     <color name="te_img_right">#edbe6c</color>
@@ -21,7 +22,6 @@
 
 
     <item name="white" type="color">#FFFFFFFF</item>
-    <item name="calculator_back" type="color">#D1D1D1</item>
     <item name="orange_text" type="color">#FF7F24</item>
     <item name="orange_bg" type="color">#FF9933</item>
     <item name="gray_btn" type="color">#F2F2F2</item>

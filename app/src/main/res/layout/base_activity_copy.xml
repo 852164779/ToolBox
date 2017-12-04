@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
-              android:id="@+id/main"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@color/white"
@@ -14,7 +13,7 @@
         android:layout_height="0dp"
         android:layout_weight="3">
 
-        <test.com.androidtest.storage.RippleImageView
+        <com.global.toolbox.storage.RippleImageView
             android:id="@+id/ramLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -26,7 +25,7 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true">
 
-            <test.com.androidtest.storage.ColorfulRingProgressView
+            <com.global.toolbox.storage.ColorfulRingProgressView
                 android:id="@+id/ramProgress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -112,7 +111,7 @@
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="15dp">
 
-            <test.com.androidtest.storage.ColorfulRingProgressView
+            <com.global.toolbox.storage.ColorfulRingProgressView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/romProgress"
                 android:layout_width="wrap_content"
@@ -158,7 +157,7 @@
             android:layout_marginBottom="15dp"
             android:layout_marginRight="15dp">
 
-            <test.com.androidtest.storage.ColorfulRingProgressView
+            <com.global.toolbox.storage.ColorfulRingProgressView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/cpuProgress"
                 android:layout_width="wrap_content"
@@ -208,12 +207,13 @@
 
     </RelativeLayout>
 
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2">
 
-        <test.com.androidtest.waveview.WaveView
+        <com.global.toolbox.waveview.WaveView
             android:id="@+id/waveview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>

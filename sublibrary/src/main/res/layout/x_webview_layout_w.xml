@@ -79,7 +79,7 @@
             android:background="#FFFFFF"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:visibility="gone">
+            >
 
             <LinearLayout
                 android:id="@+id/web_back_linearLayout"
