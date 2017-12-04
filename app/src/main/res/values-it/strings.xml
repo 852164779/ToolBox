@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Casella degli strumenti</string>
+	<string name="hello_world">Salve, mondo!</string>
+	<string name="menu_settings">Impostazioni</string>
+	<string name="refresh_normal">normale</string>
+	<string name="current_power">L\'attuale potere restante</string>
+	<string name="change_screen_light">Controllo della luminosità dello schermo</string>
+	<string name="close_screen_time">Tempo di blocco automatico dello schermo</string>
+	<string name="wlan_net">Rete WLAN</string>
+	<string name="mobile_net">Rete 2G/3G</string>
+	<string name="gps">Posizione GPS</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Gestione dell\'alimentazione</string>
+	<string name="action_settings">Impostazioni</string>
+	<string name="history_title">Record storico</string>
+	<string name="about">circa</string>
+	<string name="clear_history">Vuoto</string>
+	<string name="calculator_invalid_format">Formato non valido</string>
+	<string name="clock_title">Cronometro</string>
+	<string name="clock_start">Inizio</string>
+	<string name="clock_reset">Reset</string>
+	<string name="clock_pause">Pausa</string>
+	<string name="clock_restart">Riavviare</string>
+	<string name="clock_times">Volte</string>
+	<string name="pic_save_path">Salvare il percorso:</string>
+	<string name="no_camera">La fotocamera non è disponibile!</string>
+	<string name="face_camera_error">Fotocamera frontale anormale!</string>
+
+	<string name="temperature">Temperatura</string>
+	<string name="voltage">Tensione</string>
+	<string name="health">Salute</string>
+	<string name="good">Buona</string>
+	<string name="low_temperature">Bassa temperatura</string>
+	<string name="high_temperature">Ad alta temperatura</string>
+	<string name="high_voltage">Alta tensione</string><string name="bad">Cattiva</string>
+	<string name="technology">Tecnologia</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="pd">Totale Pulito: %1$s</string>
+	<string name="ij">Velocizzato</string>
+</resources>

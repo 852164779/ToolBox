@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Panel nástrojů</string>
+	<string name="hello_world">Ahoj světe!</string>
+	<string name="menu_settings">Nastavení</string>
+	<string name="refresh_normal">normální</string>
+	<string name="current_power">Aktuální energie</string>
+	<string name="change_screen_light">Ovládání jasu obrazovky</string>
+	<string name="close_screen_time">Automatický zámek obrazovky čas</string>
+	<string name="wlan_net">Síť WLAN</string>
+	<string name="mobile_net">2G / 3G síť</string>
+	<string name="gps">GPS poloha</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Řízení spotřeby</string>
+	<string name="action_settings">Nastavení</string>
+	<string name="history_title">Historický záznam</string>
+	<string name="about">o</string>
+	<string name="clear_history">Prázdné</string>
+	<string name="calculator_invalid_format">Neplatný formát</string>
+	<string name="clock_title">Stopky</string>
+	<string name="clock_start">Začátek</string>
+	<string name="clock_reset">Obnovit</string>
+	<string name="clock_pause">Pozastavit</string>
+	<string name="clock_restart">Restartování počítače</string>
+	<string name="clock_times">Krát</string>
+	<string name="pic_save_path">Uložení cesta:</string>
+	<string name="no_camera">Kamera není k dispozici!</string>
+	<string name="face_camera_error">Abnormální front čelí fotoaparát!</string>
+
+	<string name="temperature">Teplota</string>
+	<string name="voltage">Napětí</string>
+	<string name="health">Zdraví</string>
+	<string name="good">Dobré</string>
+	<string name="low_temperature">Nízká teplota</string>
+	<string name="high_temperature">Vysoká teplota</string>
+	<string name="high_voltage">Vysoké napětí</string><string name="bad">Špatné</string>
+	<string name="technology">Technologie</string>
+
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="pd">celkové čisté: %1$s</string>
+	<string name="ij">zrychlil</string>
+</resources>

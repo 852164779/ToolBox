@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Панель елементів</string>
+    <string name="hello_world">Привіт, народ!</string>
+    <string name="menu_settings">Параметри</string>
+    <string name="refresh_normal">звичайний</string>
+    <string name="current_power">Поточний залишився влади</string>
+    <string name="change_screen_light">Контроль за яскравістю екрана</string>
+    <string name="close_screen_time">Автоматичне блокування екрану час</string>
+    <string name="wlan_net">Мережу WLAN</string>
+    <string name="mobile_net">2 Г/3G мережі</string>
+    <string name="gps">GPS місце розташування</string>
+    <string name="bluetooth">BlueTooth</string>
+    <string name="power_management">Керування живленням</string>
+    <string name="action_settings">Параметри</string>
+    <string name="history_title">Історичні записи</string>
+    <string name="about">про</string>
+    <string name="clear_history">Порожній</string>
+    <string name="calculator_invalid_format">Неприпустимий формат</string>
+    <string name="clock_title">Секундомір</string>
+    <string name="clock_start">Почати</string>
+    <string name="clock_reset">Скидання</string>
+    <string name="clock_pause">Пауза</string>
+    <string name="clock_restart">Перезапустити</string>
+    <string name="clock_times">Разів</string>
+    <string name="pic_save_path">Зберегти шлях:</string>
+    <string name="no_camera">Доступний не камера!</string>
+    <string name="face_camera_error">Аномальні фронтальною камерою!</string>
+
+    <string name="temperature">Температура</string>
+    <string name="voltage">Напруга</string>
+    <string name="health">Здоров\'я</string>
+    <string name="good">Хороший</string>
+    <string name="low_temperature">Низькотемпературна</string>
+    <string name="high_temperature">Висока температура</string>
+    <string name="high_voltage">Висока напруга</string>
+    <string name="bad">Поганий</string>
+    <string name="technology">Технологія</string>
+    <string name="clean_msg">Clearing up the rubbish %s</string>
+    <string name="clean_now">Perfect,try again later</string>
+    <string name="pd">напълно почистени: %1$s</string>
+    <string name="ij">Yскорено</string>
+</resources>

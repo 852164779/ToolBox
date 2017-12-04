@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">جعبه ابزار</string>
+	<string name="hello_world">سلام به دنیا!</string>
+	<string name="menu_settings">تنظیمات</string>
+	<string name="refresh_normal">طبیعی</string>
+	<string name="current_power">قدرت فعلی باقی مانده</string>
+	<string name="change_screen_light">کنترل روشنایی صفحه نمایش</string>
+	<string name="close_screen_time">قفل صفحه نمایش زمان</string>
+	<string name="wlan_net">شبکه نسل سوم</string>
+	<string name="mobile_net">شبکه 2G / 3G</string>
+	<string name="gps">محل GPS</string>
+	<string name="bluetooth">بلوتوث</string>
+	<string name="power_management">مدیریت برق</string>
+	<string name="action_settings">تنظیمات</string>
+	<string name="history_title">رکورد تاریخی</string>
+	<string name="about">درباره</string>
+	<string name="clear_history">خالی</string>
+	<string name="calculator_invalid_format">فرمت غیرمعتبر</string>
+	<string name="clock_title">زمان سنج</string>
+	<string name="clock_start">شروع</string>
+	<string name="clock_reset">تنظیم مجدد</string>
+	<string name="clock_pause">مکث</string>
+	<string name="clock_restart">راه اندازی مجدد</string>
+	<string name="clock_times">بار</string>
+	<string name="pic_save_path">راه نجات:</string>
+	<string name="no_camera">دوربین در دسترس نیست!</string>
+	<string name="face_camera_error">غیر طبیعی جلوی دوربین!</string>
+
+	<string name="temperature">درجه حرارت</string>
+	<string name="voltage">ولتاژ</string>
+	<string name="health">بهداشت و درمان</string>
+	<string name="good">خوب</string>
+	<string name="low_temperature">دمای پایین</string>
+	<string name="high_temperature">درجه حرارت بالا</string>
+	<string name="high_voltage">ولتاژ بالا</string>
+	<string name="bad">بد</string>
+	<string name="technology">فن آوری</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="pd">كامل المُنظف: %1$s</string>
+	<string name="ij">تم تسريعها</string>
+</resources>

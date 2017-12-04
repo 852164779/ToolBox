@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Панель элементов</string>
+	<string name="hello_world">Всем привет!</string>
+	<string name="menu_settings">Параметры</string>
+	<string name="refresh_normal">нормальный</string>
+	<string name="current_power">Оставшиеся тока</string>
+	<string name="change_screen_light">Управление яркостью экрана</string>
+	<string name="close_screen_time">Время автоматической блокировки экрана</string>
+	<string name="wlan_net">Сеть WLAN</string>
+	<string name="mobile_net">Сеть 2G / 3G</string>
+	<string name="gps">GPS местоположение</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Управление питанием</string>
+	<string name="action_settings">Параметры</string>
+	<string name="history_title">Историческая запись</string>
+	<string name="about">о</string>
+	<string name="clear_history">Пустая</string>
+	<string name="calculator_invalid_format">Недопустимый формат</string>
+	<string name="clock_title">Секундомер</string>
+	<string name="clock_start">Начало</string>
+	<string name="clock_reset">Сброс</string>
+	<string name="clock_pause">Пауза</string>
+	<string name="clock_restart">Перезагрузка</string>
+	<string name="clock_times">Раз</string>
+	<string name="pic_save_path">Сохраните путь:</string>
+	<string name="no_camera">Камера недоступна!</string>
+	<string name="face_camera_error">Аномальные фронтальная камера!</string>
+
+	<string name="temperature">Температура</string>
+	<string name="voltage">Напряжение</string>
+	<string name="health">Здоровье</string>
+	<string name="good">Хороший</string>
+	<string name="low_temperature">Низкая температура</string>
+	<string name="high_temperature">Высокая температура</string>
+	<string name="high_voltage">Высокое напряжение</string><string name="bad">Плохо</string>
+	<string name="technology">Технология</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="pd">Oбщая уборка: %1$s</string>
+	<string name="ij">Ускорено</string>
+</resources>

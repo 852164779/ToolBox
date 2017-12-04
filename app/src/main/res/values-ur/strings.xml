@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ٹول خانہ</string>
+    <string name="hello_world">سلام دنيا!</string>
+    <string name="menu_settings">سیٹنگیں</string>
+    <string name="refresh_normal">عام</string>
+    <string name="current_power">حالیہ باقی اقتدار</string>
+    <string name="change_screen_light">سکرین چمک کنٹرول</string>
+    <string name="close_screen_time">خودکار مقفل اسکرین ٹائم</string>
+    <string name="wlan_net">WLAN نیٹ ورک</string>
+    <string name="mobile_net">2G/3 جی نیٹ ورک</string>
+    <string name="gps">GPS مقام</string>
+    <string name="bluetooth">بلوٹوت</string>
+    <string name="power_management">پاور مینجمنٹ</string>
+    <string name="action_settings">سیٹنگیں</string>
+    <string name="history_title">تاریخی ریکارڈ</string>
+    <string name="about">کے بارے میں</string>
+    <string name="clear_history">خالی</string>
+    <string name="calculator_invalid_format">ناجائز وضع کریں</string>
+    <string name="clock_title">Stopwatch</string>
+    <string name="clock_start">شروع کریں</string>
+    <string name="clock_reset">پھر سیٹ کریں</string>
+    <string name="clock_pause">توقف</string>
+    <string name="clock_restart">پھر شروع کریں</string>
+    <string name="clock_times">بار</string>
+    <string name="pic_save_path">راستہ محفوظ کریں:</string>
+    <string name="no_camera">کیمرے دستیاب نہیں ہے!</string>
+    <string name="face_camera_error">خلاف معمول سامنے کا سامنا کیمرے!</string>
+
+    <string name="temperature">درجہ حرارت</string>
+    <string name="voltage">ولٹیج</string>
+    <string name="health">صحت</string>
+    <string name="good">اچھا</string>
+    <string name="low_temperature">کم درجہ حرارت</string>
+    <string name="high_temperature">اعلی درجہ حرارت</string>
+    <string name="high_voltage">ہائی وولٹیج</string>
+    <string name="bad">برا</string>
+    <string name="technology">ٹیکنالوجی</string>
+    <string name="clean_msg">Clearing up the rubbish %s</string>
+    <string name="clean_now">Perfect,try again later</string>
+    <string name="pd">كامل المُنظف: %1$s</string>
+    <string name="ij">nopeutettu</string>
+</resources>

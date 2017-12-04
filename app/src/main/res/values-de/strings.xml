@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">ToolBox</string>
+	<string name="hello_world">Hallo Welt!</string>
+	<string name="menu_settings">Einstellungen</string>
+	<string name="refresh_normal">normale</string>
+	<string name="current_power">Die aktuellen Reststrom</string>
+	<string name="change_screen_light">Bildschirm-Helligkeit</string>
+	<string name="close_screen_time">Automatische Sperre Bildschirm Zeit</string>
+	<string name="wlan_net">WLAN-Netz</string>
+	<string name="mobile_net">2G / 3G Netz</string>
+	<string name="gps">GPS-Position</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Power-Management</string>
+	<string name="action_settings">Einstellungen</string>
+	<string name="history_title">Historischen Aufzeichnungen</string>
+	<string name="about">über</string>
+	<string name="clear_history">Leere</string>
+	<string name="calculator_invalid_format">Ungültiges format</string>
+	<string name="clock_title">Stoppuhr</string>
+	<string name="clock_start">Start</string>
+	<string name="clock_reset">Zurücksetzen</string>
+	<string name="clock_pause">Pause</string>
+	<string name="clock_restart">Neu starten</string>
+	<string name="clock_times">Male</string>
+	<string name="pic_save_path">Speichern Sie Pfad:</string>
+	<string name="no_camera">Die Kamera ist nicht verfügbar!</string>
+	<string name="face_camera_error">Abnorme Frontkamera!</string>
+
+	<string name="temperature">Temperatur</string>
+	<string name="voltage">Spannung</string>
+	<string name="health">Gesundheit</string>
+	<string name="good">Gut</string>
+	<string name="low_temperature">Niedrige Temperatur</string>
+	<string name="high_temperature">Hohe Temperatur</string>
+	<string name="high_voltage">Hochspannung</string><string name="bad">Schlechte</string>
+	<string name="technology">Technologie</string>
+
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="pd">Insgesamt bereinigt: %1$s</string>
+	<string name="ij">Beschleunigt</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Tööriistakast</string>
+	<string name="hello_world">Tere maailm!</string>
+	<string name="menu_settings">Seaded</string>
+	<string name="refresh_normal">Normaalne</string>
+	<string name="current_power">Kui praegune võimsus</string>
+	<string name="change_screen_light">Ekraani heleduse reguleerimine</string>
+	<string name="close_screen_time">Automaatne lukustus kasutusaeg</string>
+	<string name="wlan_net">WLAN-võrgu</string>
+	<string name="mobile_net">2G / 3G-võrgu</string>
+	<string name="gps">GPS asukoht</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Energiahaldus</string>
+	<string name="action_settings">Seaded</string>
+	<string name="history_title">Kronoloogiline register</string>
+	<string name="about">kohta</string>
+	<string name="clear_history">Tühi</string>
+	<string name="calculator_invalid_format">Sobimatu vorming</string>
+	<string name="clock_title">Stopper</string>
+	<string name="clock_start">Start</string>
+	<string name="clock_reset">Lähtestamine</string>
+	<string name="clock_pause">Paus</string>
+	<string name="clock_restart">Taaskäivitage</string>
+	<string name="clock_times">Korda</string>
+	<string name="pic_save_path">Salvesta tee:</string>
+	<string name="no_camera">Kaamerat pole saadaval.</string>
+	<string name="face_camera_error">Ebanormaalne näoga sõidusuunas kaamera!</string>
+
+	<string name="temperature">Temperatuuri</string>
+	<string name="voltage">Pinge</string>
+	<string name="health">Tervise</string>
+	<string name="good">Hea</string>
+	<string name="low_temperature">Madalal temperatuuril</string>
+	<string name="high_temperature">Kõrge temperatuur</string>
+	<string name="high_voltage">Kõrgepinge</string><string name="bad">Paha</string>
+	<string name="technology">Tehnoloogia</string>
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="pd">kogu puhastatud: %1$s</string>
+	<string name="ij">kiirendatud</string>
+</resources>

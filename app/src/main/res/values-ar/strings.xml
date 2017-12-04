@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">مربع الأدوات</string>
+	<string name="hello_world">مرحبا بالعالم!</string>
+	<string name="menu_settings">إعدادات</string>
+	<string name="refresh_normal">عادي</string>
+	<string name="current_power">القوة المتبقية الحالية</string>
+	<string name="change_screen_light">تحكم في سطوع الشاشة</string>
+	<string name="close_screen_time">الوقت شاشة القفل التلقائي</string>
+	<string name="wlan_net">شبكة WLAN</string>
+	<string name="mobile_net">شبكة 2g/3G</string>
+	<string name="gps">موقع لتحديد المواقع</string>
+	<string name="bluetooth">بلوتوث</string>
+	<string name="power_management">إدارة الطاقة</string>
+	<string name="action_settings">إعدادات</string>
+	<string name="history_title">السجل التاريخي</string>
+	<string name="about">حول</string>
+	<string name="clear_history">فارغة</string>
+	<string name="calculator_invalid_format">تنسيق غير صالح</string>
+	<string name="clock_title">ساعة توقيت</string>
+	<string name="clock_start">بدء تشغيل</string>
+	<string name="clock_reset">إعادة تعيين</string>
+	<string name="clock_pause">إيقاف مؤقت</string>
+	<string name="clock_restart">قم بإعادة تشغيل</string>
+	<string name="clock_times">مرات</string>
+	<string name="pic_save_path">حفظ المسار:</string>
+	<string name="no_camera">الكاميرا غير متوفرة!</string>
+	<string name="face_camera_error">غير طبيعي الأمامية التي تواجه الكاميرا!</string>
+
+	<string name="temperature">درجة الحرارة</string>
+	<string name="voltage">الجهد الكهربي</string>
+	<string name="health">الصحة</string>
+	<string name="good">جيدة</string>
+	<string name="low_temperature">درجة حرارة منخفضة</string>
+	<string name="high_temperature">درجة حرارة عالية</string>
+	<string name="high_voltage">الجهد العالي</string>
+	<string name="bad">سيئة</string>
+	<string name="technology">التكنولوجيا</string>
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="ij">تم تسريعها</string>
+	<string name="pd">كامل المُنظف: %1$s</string>
+</resources>

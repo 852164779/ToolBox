@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">À</string>
+	<string name="hello_world">Bonjou mond la!</string>
+	<string name="menu_settings">Nòmal</string>
+	<string name="refresh_normal">nòmal</string>
+	<string name="current_power">Pouvwa ki rete kouran</string>
+	<string name="change_screen_light">Twal metalik klète kontwòl</string>
+	<string name="close_screen_time">Lè ekran otomatik fèmen a kle</string>
+	<string name="wlan_net">Rezo WLAN</string>
+	<string name="mobile_net">2G / 3G rezo</string>
+	<string name="gps">KÒDONE kote yo ye</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Pouvwa jesyon</string>
+	<string name="action_settings">Nòmal</string>
+	<string name="history_title">Dosye istorik</string>
+	<string name="about">osijè de</string>
+	<string name="clear_history">Vid</string>
+	<string name="calculator_invalid_format">Fòma enfim</string>
+	<string name="clock_title">Chronomètre</string>
+	<string name="clock_start">Kòmanse</string>
+	<string name="clock_reset">Réinitialiser</string>
+	<string name="clock_pause">Pause</string>
+	<string name="clock_restart">Rekòmanse</string>
+	<string name="clock_times">Fwa</string>
+	<string name="pic_save_path">Mete sou kote wout:</string>
+	<string name="no_camera">Kamera a pa disponib!</string>
+	<string name="face_camera_error">Pa nòmal Avant-fas kamera!</string>
+
+	<string name="temperature">Tanperati</string>
+	<string name="voltage">Vòltaj</string>
+	<string name="health">Sante</string>
+	<string name="good">Nou ap boule</string>
+	<string name="low_temperature">Tanperati ba</string>
+	<string name="high_temperature">Anwo nan syèl la tanperati</string>
+	<string name="high_voltage">Anwo nan syèl la vòltaj</string>
+	<string name="bad">Move</string>
+	<string name="technology">Teknoloji</string>
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="pd">Total nettoyé : %1$s</string>
+	<string name="ij">a accéléré</string>
+</resources>

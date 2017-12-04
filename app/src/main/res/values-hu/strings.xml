@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Eszközkészlet</string>
+	<string name="hello_world">helló világ!</string>
+	<string name="menu_settings">Beállítások</string>
+	<string name="refresh_normal">normál</string>
+	<string name="current_power">A jelenlegi megmaradó erő</string>
+	<string name="change_screen_light">Képernyő fényerő-szabályozás</string>
+	<string name="close_screen_time">Automatikus zár képernyőn idő</string>
+	<string name="wlan_net">WLAN hálózati</string>
+	<string name="mobile_net">2G / 3G hálózat</string>
+	<string name="gps">GPS helyen</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Energiagazdálkodás</string>
+	<string name="action_settings">Beállítások</string>
+	<string name="history_title">Történelmi rekord</string>
+	<string name="about">körülbelül</string>
+	<string name="clear_history">Üres</string>
+	<string name="calculator_invalid_format">Érvénytelen formátum</string>
+	<string name="clock_title">Stopperóra</string>
+	<string name="clock_start">Start</string>
+	<string name="clock_reset">Reset</string>
+	<string name="clock_pause">Szünet</string>
+	<string name="clock_restart">Újból kifejt</string>
+	<string name="clock_times">Alkalommal</string>
+	<string name="pic_save_path">Mentés elérési útja:</string>
+	<string name="no_camera">Nem érhető el a kamerát!</string>
+	<string name="face_camera_error">Rendellenes eleje-fordulat fényképezőgép!</string>
+
+	<string name="temperature">Hőmérséklet</string>
+	<string name="voltage">Feszültség</string>
+	<string name="health">Egészségügyi</string>
+	<string name="good">jó</string>
+	<string name="low_temperature">Alacsony hőmérsékletű</string>
+	<string name="high_temperature">Magas hőmérséklet</string>
+	<string name="high_voltage">Nagyfeszültségű</string><string name="bad">rossz</string>
+	<string name="technology">Technológia</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="pd">Összesen felszabadítva: %1$s</string>
+	<string name="ij">felgyorsult</string>
+</resources>

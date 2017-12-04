@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Caixa de ferramentas</string>
+	<string name="hello_world">Olá, mundo!</string>
+	<string name="menu_settings">Configurações</string>
+	<string name="refresh_normal">normal</string>
+	<string name="current_power">A energia restante atual</string>
+	<string name="change_screen_light">Controle de brilho da tela</string>
+	<string name="close_screen_time">Tempo de tela de bloqueio automático</string>
+	<string name="wlan_net">Rede WLAN</string>
+	<string name="mobile_net">Rede 2G/3G</string>
+	<string name="gps">Localização GPS</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Gerenciamento de energia</string>
+	<string name="action_settings">Configurações</string>
+	<string name="history_title">Registro histórico</string>
+	<string name="about">sobre</string>
+	<string name="clear_history">Vazio</string>
+	<string name="calculator_invalid_format">Formato inválido</string>
+	<string name="clock_title">Cronômetro</string>
+	<string name="clock_start">Início</string>
+	<string name="clock_reset">Redefinir</string>
+	<string name="clock_pause">Pausa</string>
+	<string name="clock_restart">Reiniciar</string>
+	<string name="clock_times">Vezes</string>
+	<string name="pic_save_path">Salve o caminho:</string>
+	<string name="no_camera">A câmera não está disponível!</string>
+	<string name="face_camera_error">Anormal câmera frontal!</string>
+
+	<string name="temperature">Temperatura</string>
+	<string name="voltage">Tensão</string>
+	<string name="health">Saúde</string>
+	<string name="good">Bom</string>
+	<string name="low_temperature">Baixa temperatura</string>
+	<string name="high_temperature">Alta temperatura</string>
+	<string name="high_voltage">Alta tensão</string><string name="bad">Mau</string>
+	<string name="technology">Tecnologia</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="ij">Otimizado</string>
+	<string name="pd">Total Apagado: %1$s</string>
+</resources>

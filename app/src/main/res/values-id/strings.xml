@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">ToolBox</string>
+	<string name="hello_world">Halo dunia!</string>
+	<string name="menu_settings">Pengaturan</string>
+	<string name="refresh_normal">normal</string>
+	<string name="current_power">Sisa kekuatan saat ini</string>
+	<string name="change_screen_light">Kontrol kecerahan layar</string>
+	<string name="close_screen_time">Kunci otomatis layar waktu</string>
+	<string name="wlan_net">WLAN jaringan</string>
+	<string name="mobile_net">Jaringan 2G / 3G</string>
+	<string name="gps">Lokasi GPS</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Manajemen Power</string>
+	<string name="action_settings">Pengaturan</string>
+	<string name="history_title">Catatan sejarah</string>
+	<string name="about">tentang</string>
+	<string name="clear_history">Kosong</string>
+	<string name="calculator_invalid_format">Formatnya tidak sesuai</string>
+	<string name="clock_title">Stopwatch</string>
+	<string name="clock_start">Mulai</string>
+	<string name="clock_reset">Reset</string>
+	<string name="clock_pause">Jeda</string>
+	<string name="clock_restart">Restart</string>
+	<string name="clock_times">Kali</string>
+	<string name="pic_save_path">Hemat jalan:</string>
+	<string name="no_camera">Kamera ini tidak tersedia!</string>
+	<string name="face_camera_error">Abnormal menghadap depan kamera!</string>
+
+	<string name="temperature">Suhu</string>
+	<string name="voltage">Tegangan</string>
+	<string name="health">Kesehatan</string>
+	<string name="good">Bagus</string>
+	<string name="low_temperature">Suhu rendah</string>
+	<string name="high_temperature">Suhu tinggi</string>
+	<string name="high_voltage">Tegangan tinggi</string><string name="bad">Buruk</string>
+	<string name="technology">Teknologi</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="pd">Total Cleaned: %1$s</string>
+	<string name="ij">Boosted</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Įrankių komplektas</string>
+	<string name="hello_world">sveikas, pasauli!</string>
+	<string name="menu_settings">Parametrai</string>
+	<string name="refresh_normal">normalus</string>
+	<string name="current_power">Dabartinis likusi įkrova</string>
+	<string name="change_screen_light">Ekrano ryškumo valdymas</string>
+	<string name="close_screen_time">Automatinis užrakto ekrano laikas</string>
+	<string name="wlan_net">WLAN tinklo</string>
+	<string name="mobile_net">2G / 3G tinklo</string>
+	<string name="gps">GPS vieta</string>
+	<string name="bluetooth">"Bluetooth"</string>
+	<string name="power_management">Maitinimo valdymas</string>
+	<string name="action_settings">Parametrai</string>
+	<string name="history_title">Archyvinius įrašus</string>
+	<string name="about">apie</string>
+	<string name="clear_history">Tuščias</string>
+	<string name="calculator_invalid_format">Netinkamas formatas</string>
+	<string name="clock_title">Chronometras</string>
+	<string name="clock_start">Pradėti</string>
+	<string name="clock_reset">Nustatyti iš naujo</string>
+	<string name="clock_pause">Pauzė</string>
+	<string name="clock_restart">Paleiskite iš naujo</string>
+	<string name="clock_times">Kartus</string>
+	<string name="pic_save_path">Išskyrus kelias:</string>
+	<string name="no_camera">Fotoaparatas nėra!</string>
+	<string name="face_camera_error">Nenormalus priekinę kamerą!</string>
+
+	<string name="temperature">Temperatūra</string>
+	<string name="voltage">Įtampos</string>
+	<string name="health">Sveikatos</string>
+	<string name="good">geras</string>
+	<string name="low_temperature">Žemos temperatūros</string>
+	<string name="high_temperature">Aukštos temperatūros</string>
+	<string name="high_voltage">Aukštos įtampos</string><string name="bad">blogas</string>
+	<string name="technology">Technologijos</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="ij">beschleunigte</string>
+	<string name="pd">insgesamt haben: %1$s</string>
+</resources>

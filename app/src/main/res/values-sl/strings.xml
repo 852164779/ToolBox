@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Orodjarna</string>
+	<string name="hello_world">pozdravljeni vsi skupaj!</string>
+	<string name="menu_settings">Nastavitve</string>
+	<string name="refresh_normal">normalno</string>
+	<string name="current_power">Trenutni ostanek sila</string>
+	<string name="change_screen_light">Svetlost zaslona</string>
+	<string name="close_screen_time">Samodejno zaklepanje zaslon čas</string>
+	<string name="wlan_net">WLAN omrežja</string>
+	<string name="mobile_net">2G / 3G omrežje</string>
+	<string name="gps">GPS lokacijo</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Upravljanje porabe</string>
+	<string name="action_settings">Nastavitve</string>
+	<string name="history_title">Zgodovinski zapis</string>
+	<string name="about">o</string>
+	<string name="clear_history">Prazna</string>
+	<string name="calculator_invalid_format">Neveljavna oblika</string>
+	<string name="clock_title">Štoparica</string>
+	<string name="clock_start">Začetek</string>
+	<string name="clock_reset">Ponastavitev</string>
+	<string name="clock_pause">Premor</string>
+	<string name="clock_restart">Zopet začeti</string>
+	<string name="clock_times">Krat</string>
+	<string name="pic_save_path">Pot shranite tako:</string>
+	<string name="no_camera">Kamera ni na voljo!</string>
+	<string name="face_camera_error">Nenormalno pročelje-sprednja stran velblod!</string>
+
+	<string name="temperature">Temperatura</string>
+	<string name="voltage">Napetost</string>
+	<string name="health">Zdravje</string>
+	<string name="good">dobro</string>
+	<string name="low_temperature">Nizke temperature</string>
+	<string name="high_temperature">Visoke temperature</string>
+	<string name="high_voltage">Visoka napetost</string><string name="bad">slabo</string>
+	<string name="technology">Tehnologija</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="ij">pospešiti.</string>
+	<string name="pd">popolnoma očiščena: %1$s</string>
+
+</resources>

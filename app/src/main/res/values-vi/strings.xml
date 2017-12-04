@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hộp công cụ</string>
+    <string name="hello_world">Chào thế giới!</string>
+    <string name="menu_settings">Cài đặt</string>
+    <string name="refresh_normal">bình thường</string>
+    <string name="current_power">Sức mạnh còn lại hiện tại</string>
+    <string name="change_screen_light">Điều khiển độ sáng màn hình</string>
+    <string name="close_screen_time">Tự động khóa màn hình thời gian</string>
+    <string name="wlan_net">Mạng WLAN</string>
+    <string name="mobile_net">Mạng 2G / 3G</string>
+    <string name="gps">Vị trí GPS</string>
+    <string name="bluetooth">BlueTooth</string>
+    <string name="power_management">Quản lý điện năng</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="history_title">Kỷ lục lịch sử</string>
+    <string name="about">về</string>
+    <string name="clear_history">Sản phẩm nào</string>
+    <string name="calculator_invalid_format">Định dạng không hợp lệ</string>
+    <string name="clock_title">Đồng hồ bấm giờ</string>
+    <string name="clock_start">Bắt đầu</string>
+    <string name="clock_reset">Thiết lập lại</string>
+    <string name="clock_pause">Tạm dừng</string>
+    <string name="clock_restart">Khởi động lại</string>
+    <string name="clock_times">Thời gian</string>
+    <string name="pic_save_path">Lưu đường dẫn:</string>
+    <string name="no_camera">Máy ảnh không phải là không có sẵn!</string>
+    <string name="face_camera_error">Bất thường trước-đối mặt máy ảnh!</string>
+
+    <string name="temperature">Nhiệt độ</string>
+    <string name="voltage">Điện áp</string>
+    <string name="health">Sức khỏe</string>
+    <string name="good">Tốt</string>
+    <string name="low_temperature">Nhiệt độ thấp</string>
+    <string name="high_temperature">Nhiệt độ cao</string>
+    <string name="high_voltage">Điện áp cao</string>
+    <string name="bad">Tồi</string>
+    <string name="technology">Công nghệ</string>
+    <string name="clean_msg">Clearing up the rubbish %s</string>
+    <string name="clean_now">Perfect,try again later</string>
+
+    <string name="ij">Đã tăng tốc</string>
+    <string name="pd">Dọn sạch toàn bộ.: %1$s</string>
+
+</resources>

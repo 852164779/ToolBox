@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Boîte à outils</string>
+	<string name="hello_world">Salut tout le monde !</string>
+	<string name="menu_settings">Paramètres</string>
+	<string name="refresh_normal">normal</string>
+	<string name="current_power">La puissance restante actuelle</string>
+	<string name="change_screen_light">Réglage de la luminosité écran</string>
+	<string name="close_screen_time">Temps d’écran de verrouillage automatique</string>
+	<string name="wlan_net">Réseau WLAN</string>
+	<string name="mobile_net">Réseau 2G / 3G</string>
+	<string name="gps">Localisation GPS</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Gestion de l’alimentation</string>
+	<string name="action_settings">Paramètres</string>
+	<string name="history_title">Dossier historique</string>
+	<string name="about">sur</string>
+	<string name="clear_history">Vide</string>
+	<string name="calculator_invalid_format">Format non valide</string>
+	<string name="clock_title">Chronomètre</string>
+	<string name="clock_start">Début</string>
+	<string name="clock_reset">Remise à zéro</string>
+	<string name="clock_pause">Pause</string>
+	<string name="clock_restart">Redémarrez</string>
+	<string name="clock_times">Fois</string>
+	<string name="pic_save_path">Enregistrez le chemin d’accès :</string>
+	<string name="no_camera">La caméra n’est pas disponible !</string>
+	<string name="face_camera_error">Caméra frontale anormale !</string>
+
+	<string name="temperature">Température</string>
+	<string name="voltage">Tension</string>
+	<string name="health">Santé</string>
+	<string name="good">Bon</string>
+	<string name="low_temperature">Basse température</string>
+	<string name="high_temperature">Haute température</string>
+	<string name="high_voltage">Haute tension</string><string name="bad">Mauvaise</string>
+	<string name="technology">Technologie</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="ij">a accéléré</string>
+	<string name="pd">Total nettoyé : %1$s</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Caja de herramientas</string>
+	<string name="hello_world">¡Hola mundo!</string>
+	<string name="menu_settings">Configuración</string>
+	<string name="refresh_normal">normal</string>
+	<string name="current_power">La energía restante en la actual</string>
+	<string name="change_screen_light">Control de brillo de pantalla</string>
+	<string name="close_screen_time">Tiempo de bloqueo automático de pantalla</string>
+	<string name="wlan_net">Red WLAN</string>
+	<string name="mobile_net">Red 2G / 3G</string>
+	<string name="gps">Localización GPS</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Administración de energía</string>
+	<string name="action_settings">Configuración</string>
+	<string name="history_title">Registro histórico</string>
+	<string name="about">Acerca de</string>
+	<string name="clear_history">Vacío</string>
+	<string name="calculator_invalid_format">Formato no válido</string>
+	<string name="clock_title">Cronómetro</string>
+	<string name="clock_start">Inicio</string>
+	<string name="clock_reset">RESET</string>
+	<string name="clock_pause">Pausa</string>
+	<string name="clock_restart">Reiniciar</string>
+	<string name="clock_times">Veces</string>
+	<string name="pic_save_path">Guardar la ruta de acceso:</string>
+	<string name="no_camera">¡La cámara no está disponible!</string>
+	<string name="face_camera_error">¡Anormal cámara frontal!</string>
+
+	<string name="temperature">Temperatura</string>
+	<string name="voltage">Tensión</string>
+	<string name="health">Salud</string>
+	<string name="good">Buena</string>
+	<string name="low_temperature">Baja temperatura</string>
+	<string name="high_temperature">Alta temperatura</string>
+	<string name="high_voltage">Alto voltaje</string><string name="bad">Mala</string>
+	<string name="technology">Tecnología</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="pd">Total limpiado: %1$s</string>
+	<string name="ij">Acelerado</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">ארגז הכלים</string>
+	<string name="hello_world">שלום לך עולם!</string>
+	<string name="menu_settings">הגדרות</string>
+	<string name="refresh_normal">רגיל</string>
+	<string name="current_power">שאר הכוח הנוכחית</string>
+	<string name="change_screen_light">בקרת בהירות המסך</string>
+	<string name="close_screen_time">זמן מסך נעילה אוטומטית</string>
+	<string name="wlan_net">רשת WLAN</string>
+	<string name="mobile_net">רשת דור 2/3g</string>
+	<string name="gps">מיקום GPS</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">ניהול צריכת חשמל</string>
+	<string name="action_settings">הגדרות</string>
+	<string name="history_title">רישום היסטורי</string>
+	<string name="about">אודות</string>
+	<string name="clear_history">ריק</string>
+	<string name="calculator_invalid_format">תבנית לא חוקית</string>
+	<string name="clock_title">סטופר</string>
+	<string name="clock_start">התחל</string>
+	<string name="clock_reset">איפוס</string>
+	<string name="clock_pause">השהה</string>
+	<string name="clock_restart">הפעלה מחדש</string>
+	<string name="clock_times">פעמים</string>
+	<string name="pic_save_path">שמור נתיב:</string>
+	<string name="no_camera">המצלמה אינה זמינה!</string>
+	<string name="face_camera_error">חריג הקדמי מול המצלמה!</string>
+
+	<string name="temperature">טמפרטורה</string>
+	<string name="voltage">מתח</string>
+	<string name="health">בריאות</string>
+	<string name="good">טוב</string>
+	<string name="low_temperature">טמפרטורה נמוכה</string>
+	<string name="high_temperature">טמפרטורה גבוהה</string>
+	<string name="high_voltage">מתח גבוה</string>	<string name="bad">רע</string>
+	<string name="technology">טכנולוגיה</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="ij">הואץ</string>
+	<string name="pd">סה כ לנקות: %1$s</string>
+</resources>

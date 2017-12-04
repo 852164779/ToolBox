@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ToolBox</string>
+    <string name="hello_world">世界您好！</string>
+    <string name="menu_settings">設置</string>
+    <string name="refresh_normal">正常</string>
+    <string name="current_power">當前的剩餘力量</string>
+    <string name="change_screen_light">螢幕亮度控制</string>
+    <string name="close_screen_time">自動鎖定螢幕時間</string>
+    <string name="wlan_net">WLAN 網路</string>
+    <string name="mobile_net">2g/3g 網路</string>
+    <string name="gps">GPS 定位</string>
+    <string name="bluetooth">藍牙</string>
+    <string name="power_management">電源管理</string>
+    <string name="action_settings">設置</string>
+    <string name="history_title">歷史記錄</string>
+    <string name="about">關於</string>
+    <string name="clear_history">空</string>
+    <string name="calculator_invalid_format">不正確格式</string>
+    <string name="clock_title">碼錶</string>
+    <string name="clock_start">開始</string>
+    <string name="clock_reset">重置</string>
+    <string name="clock_pause">暫停</string>
+    <string name="clock_restart">重新開機</string>
+    <string name="clock_times">時間</string>
+    <string name="pic_save_path">保存路徑︰</string>
+    <string name="no_camera">觀景窗不是可用的 ！</string>
+    <string name="face_camera_error">異常的前置攝像頭 ！</string>
+
+    <string name="temperature">溫度</string>
+    <string name="voltage">電壓</string>
+    <string name="health">健康</string>
+    <string name="good">良好</string>
+    <string name="low_temperature">低溫度</string>
+    <string name="high_temperature">耐高溫</string>
+    <string name="high_voltage">高電壓</string>
+    <string name="bad">壞</string>
+    <string name="technology">技術</string>
+
+    <string name="clean_msg">Clearing up the rubbish %s</string>
+    <string name="clean_now">Perfect,try again later</string>
+
+    <string name="ij">已加速</string>
+    <string name="pd">累計清理: %1$s</string>
+</resources>

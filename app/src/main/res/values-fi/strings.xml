@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">ToolBox</string>
+	<string name="hello_world">Moi maailma!</string>
+	<string name="menu_settings">Asetukset</string>
+	<string name="refresh_normal">Normaali</string>
+	<string name="current_power">Nykyinen jäljellä olevan virran</string>
+	<string name="change_screen_light">Näytön kirkkaus</string>
+	<string name="close_screen_time">Automaattinen lukitus näytön aika</string>
+	<string name="wlan_net">WLAN-verkon</string>
+	<string name="mobile_net">2G / 3G-verkon</string>
+	<string name="gps">GPS-sijainti</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Eksponentti hallinta</string>
+	<string name="action_settings">Asetukset</string>
+	<string name="history_title">Historiallinen ennätys</string>
+	<string name="about">tietoja</string>
+	<string name="clear_history">Tyhjä</string>
+	<string name="calculator_invalid_format">Virheellinen muoto</string>
+	<string name="clock_title">Sekuntikello</string>
+	<string name="clock_start">Käynnistä</string>
+	<string name="clock_reset">Palauta</string>
+	<string name="clock_pause">Tauko</string>
+	<string name="clock_restart">Käynnistä uudelleen</string>
+	<string name="clock_times">Kertaa</string>
+	<string name="pic_save_path">Tallenna polku:</string>
+	<string name="no_camera">Kamera ei ole käytettävissä!</string>
+	<string name="face_camera_error">Epänormaali eteen päin kamera!</string>
+
+	<string name="temperature">Lämpötila</string>
+	<string name="voltage">Jännite</string>
+	<string name="health">Terveys</string>
+	<string name="good">Hyvä</string>
+	<string name="low_temperature">Alhainen lämpötila</string>
+	<string name="high_temperature">Korkea lämpötila</string>
+	<string name="high_voltage">Korkea jännite</string>	<string name="bad">Paha</string>
+	<string name="technology">Tekniikka</string>
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="pd">puhdistettu yhteensä: %1$s</string>
+	<string name="ij">nopeutettu</string>
+</resources>

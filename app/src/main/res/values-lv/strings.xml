@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rīklodziņš</string>
+    <string name="hello_world">sveika, pasaule!</string>
+    <string name="menu_settings">Iestatījumi</string>
+    <string name="refresh_normal">parastā</string>
+    <string name="current_power">Pašreizējās atlikušās jaudas</string>
+    <string name="change_screen_light">Ekrāna spilgtuma kontrole</string>
+    <string name="close_screen_time">Automātiskās bloķēšanas ekrāna laiks</string>
+    <string name="wlan_net">WLAN tīklu</string>
+    <string name="mobile_net">2G/3G tīkls</string>
+    <string name="gps">GPS atrašanās vietu</string>
+    <string name="bluetooth">BlueTooth</string>
+    <string name="power_management">Barošanas pārvaldība</string>
+    <string name="action_settings">Iestatījumi</string>
+    <string name="history_title">Vēsturisku ierakstu</string>
+    <string name="about">par</string>
+    <string name="clear_history">Tukšs</string>
+    <string name="calculator_invalid_format">Nederīgs formāts</string>
+    <string name="clock_title">Hronometrs</string>
+    <string name="clock_start">Sākums</string>
+    <string name="clock_reset">Atiestatīt</string>
+    <string name="clock_pause">Pauze</string>
+    <string name="clock_restart">Restartējiet</string>
+    <string name="clock_times">Reizes</string>
+    <string name="pic_save_path">Saglabāt ceļa:</string>
+    <string name="no_camera">Kamera nav pieejama!</string>
+    <string name="face_camera_error">Patoloģiska front-facing kameru!</string>
+
+    <string name="temperature">Temperatūra</string>
+    <string name="voltage">Spriegums</string>
+    <string name="health">Veselības</string>
+    <string name="good">labs</string>
+    <string name="low_temperature">Zemas temperatūras</string>
+    <string name="high_temperature">Augstai temperatūrai</string>
+    <string name="high_voltage">Augstsprieguma</string>
+    <string name="bad">slikts</string>
+    <string name="technology">Tehnoloģija</string>
+    <string name="clean_msg">Clearing up the rubbish %s</string>
+    <string name="clean_now">Perfect,try again later</string>
+    <string name="pd">celkové čisté: %1$s</string>
+    <string name="ij">zrychlený</string>
+</resources>

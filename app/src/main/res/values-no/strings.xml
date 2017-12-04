@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Verktøykassen</string>
+	<string name="hello_world">hallo verden!</string>
+	<string name="menu_settings">Innstillinger</string>
+	<string name="refresh_normal">normal</string>
+	<string name="current_power">Det gjeldende resterende makten</string>
+	<string name="change_screen_light">Skjermen lysstyrkekontroll</string>
+	<string name="close_screen_time">Automatisk Lås skjermen tid</string>
+	<string name="wlan_net">WLAN-nettverk</string>
+	<string name="mobile_net">2G / 3G-nettverk</string>
+	<string name="gps">GPS-posisjon</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Strømstyring</string>
+	<string name="action_settings">Innstillinger</string>
+	<string name="history_title">Historisk posten</string>
+	<string name="about">om</string>
+	<string name="clear_history">Tom</string>
+	<string name="calculator_invalid_format">Ugyldig format</string>
+	<string name="clock_title">Stoppeklokke</string>
+	<string name="clock_start">Start</string>
+	<string name="clock_reset">Tilbakestille</string>
+	<string name="clock_pause">Pause</string>
+	<string name="clock_restart">Omstart</string>
+	<string name="clock_times">Ganger</string>
+	<string name="pic_save_path">Lagre bane:</string>
+	<string name="no_camera">Kameraet er ikke tilgjengelig.</string>
+	<string name="face_camera_error">Unormal front-mot kamera!</string>
+
+	<string name="temperature">Temperatur</string>
+	<string name="voltage">Spenning</string>
+	<string name="health">Helse</string>
+	<string name="good">bra</string>
+	<string name="low_temperature">Lav temperatur</string>
+	<string name="high_temperature">Høy temperatur</string>
+	<string name="high_voltage">Høyspenning</string>	<string name="bad">dårlig</string>
+	<string name="technology">Teknologi</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="ij">"Boosted "</string>
+	<string name="pd">Total Cleaned: %1$s</string>
+</resources>

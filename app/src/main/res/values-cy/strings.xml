@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="about">am</string>
+	<string name="action_settings">Gosodiadau</string>
+	<string name="app_name">Blwch offer</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="calculator_invalid_format">Fformat annilys</string>
+	<string name="change_screen_light">Rheoli disgleirdeb sgrin</string>
+	<string name="clear_history">Gwag</string>
+	<string name="clock_pause">Saib</string>
+	<string name="clock_reset">Ailosod</string>
+	<string name="clock_restart">Ailgychwyn</string>
+	<string name="clock_start">Yn dechrau</string>
+	<string name="clock_times">Amseroedd</string>
+	<string name="clock_title">Stopwats</string>
+	<string name="close_screen_time">Amser sgrin clo awtomatig</string>
+	<string name="current_power">Pŵer presennol sy\'n weddill</string>
+	<string name="face_camera_error">Annormal flaen sy\'n wynebu\'r camera!</string>
+	<string name="gps">Lleoliad meddygon TEULU</string>
+	<string name="hello_world">helo byd!</string>
+	<string name="history_title">Cofnod hanesyddol</string>
+	<string name="menu_settings">Gosodiadau</string>
+	<string name="mobile_net">Rhwydwaith 2G / 3G</string>
+	<string name="no_camera">Nid yw ar gael ar y camera!</string>
+	<string name="pic_save_path">Cadw\'r llwybr:</string>
+	<string name="power_management">Rheoli pŵer</string>
+	<string name="refresh_normal">arferol</string>
+	<string name="wlan_net">Rhwydwaith MAMFWRDD</string>
+
+	<string name="temperature">Tymheredd</string>
+	<string name="voltage">Foltedd</string>
+	<string name="health">Iechyd</string>
+	<string name="good">Da</string>
+	<string name="low_temperature">Tymheredd isel</string>
+	<string name="high_temperature">Tymheredd uchel</string>
+	<string name="high_voltage">Foltedd uchel</string><string name="bad">Drwg</string>
+	<string name="technology">Technoleg</string>
+
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="pd">puhdistettu yhteensä: %1$s</string>
+	<string name="ij">nopeutettu</string>
+</resources>

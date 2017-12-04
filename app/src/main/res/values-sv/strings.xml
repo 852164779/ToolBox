@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Verktygslåda</string>
+	<string name="hello_world">Hej världen!</string>
+	<string name="menu_settings">Inställningar</string>
+	<string name="refresh_normal">normala</string>
+	<string name="current_power">Den aktuella återstående strömmen</string>
+	<string name="change_screen_light">Skärmens ljusstyrka</string>
+	<string name="close_screen_time">Automatiska låset skärmtid</string>
+	<string name="wlan_net">WLAN-nätverk</string>
+	<string name="mobile_net">2G / 3G-nät</string>
+	<string name="gps">GPS-läge</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Power Management</string>
+	<string name="action_settings">Inställningar</string>
+	<string name="history_title">Historiska rekord</string>
+	<string name="about">om</string>
+	<string name="clear_history">Tom</string>
+	<string name="calculator_invalid_format">Ogiltigt format</string>
+	<string name="clock_title">Stoppur</string>
+	<string name="clock_start">Starta</string>
+	<string name="clock_reset">Återställa</string>
+	<string name="clock_pause">Pausa</string>
+	<string name="clock_restart">Starta om</string>
+	<string name="clock_times">Gånger</string>
+	<string name="pic_save_path">Spara sökvägen:</string>
+	<string name="no_camera">Kameran finns inte!</string>
+	<string name="face_camera_error">Onormal framåtriktad kamera!</string>
+
+	<string name="temperature">Temperatur</string>
+	<string name="voltage">Spänning</string>
+	<string name="health">Hälsa</string>
+	<string name="good">Bra</string>
+	<string name="low_temperature">Låg temperatur</string>
+	<string name="high_temperature">Hög temperatur</string>
+	<string name="high_voltage">Högspänning</string><string name="bad">Dålig</string>
+	<string name="technology">Teknik</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="ij">påskyndat</string>
+	<string name="pd">totala städade: %1$s</string>
+</resources>

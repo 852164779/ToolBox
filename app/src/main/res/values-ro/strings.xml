@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Trusă de scule</string>
+	<string name="hello_world">bună oameni buni!</string>
+	<string name="menu_settings">Setări</string>
+	<string name="refresh_normal">normală</string>
+	<string name="current_power">Puterea rămase curent</string>
+	<string name="change_screen_light">Ecran brightness contract</string>
+	<string name="close_screen_time">Timp de ecran de blocare automată</string>
+	<string name="wlan_net">Reþele WLAN</string>
+	<string name="mobile_net">Reţeaua 2G / 3G</string>
+	<string name="gps">Localizare GPS</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Power Management</string>
+	<string name="action_settings">Setări</string>
+	<string name="history_title">Record istoric</string>
+	<string name="about">despre</string>
+	<string name="clear_history">Gol</string>
+	<string name="calculator_invalid_format">Format nevalid</string>
+	<string name="clock_title">Cronometru</string>
+	<string name="clock_start">Începe</string>
+	<string name="clock_reset">Resetare</string>
+	<string name="clock_pause">Pauză</string>
+	<string name="clock_restart">Reporniţi</string>
+	<string name="clock_times">Ori</string>
+	<string name="pic_save_path">Salvaţi calea:</string>
+	<string name="no_camera">Camera nu este disponibil!</string>
+	<string name="face_camera_error">Anormale de fotografiat fata-cu care se confruntă!</string>
+
+	<string name="temperature">Temperatura</string>
+	<string name="voltage">Tensiune</string>
+	<string name="health">Sănătate</string>
+	<string name="good">bun</string>
+	<string name="low_temperature">Temperatură scăzută</string>
+	<string name="high_temperature">Temperatură înaltă</string>
+	<string name="high_voltage">Înaltă tensiune</string><string name="bad">rău</string>
+	<string name="technology">Tehnologie</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="ij">accelerată</string>
+	<string name="pd">total curăţat: %1$s</string>
+</resources>

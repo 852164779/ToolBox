@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">กล่องเครื่องมือ</string>
+	<string name="hello_world">หวัดดีชาวโลก!</string>
+	<string name="menu_settings">การตั้งค่า</string>
+	<string name="refresh_normal">ปกติ</string>
+	<string name="current_power">กำลังไฟเหลือปัจจุบัน</string>
+	<string name="change_screen_light">ควบคุมความสว่างของหน้าจอ</string>
+	<string name="close_screen_time">เวลาหน้าจอล็อคอัตโนมัติ</string>
+	<string name="wlan_net">เครือข่าย WLAN</string>
+	<string name="mobile_net">เครือข่าย 3G 2G</string>
+	<string name="gps">ตำแหน่ง GPS</string>
+	<string name="bluetooth">บลูทูธ</string>
+	<string name="power_management">การจัดการพลังงาน</string>
+	<string name="action_settings">การตั้งค่า</string>
+	<string name="history_title">บันทึกประวัติศาสตร์</string>
+	<string name="about">เกี่ยวกับ</string>
+	<string name="clear_history">ว่างเปล่า</string>
+	<string name="calculator_invalid_format">รูปไม่ถูกต้อง</string>
+	<string name="clock_title">นาฬิกาจับเวลา</string>
+	<string name="clock_start">เริ่มต้น</string>
+	<string name="clock_reset">รีเซ็ต</string>
+	<string name="clock_pause">หยุดชั่วคราว</string>
+	<string name="clock_restart">เริ่มการทำงาน</string>
+	<string name="clock_times">ครั้ง</string>
+	<string name="pic_save_path">บันทึกเส้นทาง:</string>
+	<string name="no_camera">ไม่มีกล้อง</string>
+	<string name="face_camera_error">ปกติกล้องหน้า</string>
+
+	<string name="temperature">อุณหภูมิ</string>
+	<string name="voltage">แรงดันไฟฟ้า</string>
+	<string name="health">สุขภาพ</string>
+	<string name="good">ดี</string>
+	<string name="low_temperature">อุณหภูมิต่ำ</string>
+	<string name="high_temperature">อุณหภูมิสูง</string>
+	<string name="high_voltage">แรงดันสูง</string><string name="bad">ไม่ดี</string>
+	<string name="technology">เทคโนโลยี</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="ij">ได้เร่ง</string>
+	<string name="pd">ทั้งหมดทำความสะอาด: %1$s</string>
+
+</resources>

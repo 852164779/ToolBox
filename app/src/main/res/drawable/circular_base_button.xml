@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke android:width="5dip" android:color="@color/ram_back" /><!-- 描边 ：边框宽度与颜色 -->
+
+    <corners  android:topLeftRadius="6dip"
+              android:topRightRadius="6dip"
+              android:bottomLeftRadius="6dip"
+              android:bottomRightRadius="6dip"/><!-- 圆角的半径  也可以统一设置半径 android:radius="9dip"-->
+
+    <solid android:color="@color/ram_back" /> <!-- 没有描边的中间部分 --><!--solid 与  gradient 只能显示在代码最后那个-->
+</shape>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Zestaw narzędzi</string>
+	<string name="hello_world">Cześć ludzie!</string>
+	<string name="menu_settings">Ustawienia</string>
+	<string name="refresh_normal">normalne</string>
+	<string name="current_power">Bieżący poziom naładowania</string>
+	<string name="change_screen_light">Regulacja jasności ekranu</string>
+	<string name="close_screen_time">Automatyczna blokada ekranu czas</string>
+	<string name="wlan_net">Sieci WLAN</string>
+	<string name="mobile_net">Sieci 2G / 3G</string>
+	<string name="gps">GPS lokalizacja</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Zarządzanie energią</string>
+	<string name="action_settings">Ustawienia</string>
+	<string name="history_title">Historyczny rekord</string>
+	<string name="about">o</string>
+	<string name="clear_history">Pusty</string>
+	<string name="calculator_invalid_format">Nieprawidłowy format</string>
+	<string name="clock_title">Stoper</string>
+	<string name="clock_start">Początek</string>
+	<string name="clock_reset">Reset</string>
+	<string name="clock_pause">Wstrzymaj</string>
+	<string name="clock_restart">Uruchom ponownie</string>
+	<string name="clock_times">Razy</string>
+	<string name="pic_save_path">Zapisz ścieżkę:</string>
+	<string name="no_camera">Aparat nie jest dostępne!</string>
+	<string name="face_camera_error">Nienormalne przedni aparat!</string>
+
+	<string name="temperature">Temperatury</string>
+	<string name="voltage">Napięcie</string>
+	<string name="health">Zdrowie</string>
+	<string name="good">Dobry</string>
+	<string name="low_temperature">Niska temperatura</string>
+	<string name="high_temperature">Wysoka temperatura</string>
+	<string name="high_voltage">Wysokiego napięcia</string><string name="bad">Zły</string>
+	<string name="technology">Technologia</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="ij">Przyspieszono</string>
+	<string name="pd">Wyczyszczono łącznie: %1$s</string>
+</resources>

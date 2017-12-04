@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="app_name">L-għodda</string>
+<string name="hello_world">bonġu dinja!</string>
+<string name="menu_settings">L-issettjar</string>
+<string name="refresh_normal">normali</string>
+<string name="current_power">Il-qawwa li jifdal kurrenti</string>
+<string name="change_screen_light">anpassa den ljusstyrka</string>
+<string name="close_screen_time">tid som lås.</string>
+<string name="wlan_net">In-netwerk tas-servizz Autoconfig</string>
+<string name="mobile_net">Network 2G / 3G</string>
+<string name="gps">Lokazzjoni tal-GPS</string>
+<string name="bluetooth">BlueTooth</string>
+<string name="power_management">Immaniġġjar tal-enerġija</string>
+<string name="action_settings">L-issettjar</string>
+<string name="history_title">Rekord storika</string>
+<string name="about">dwar il-</string>
+<string name="clear_history">Vojta</string>
+<string name="calculator_invalid_format">Format invalidu</string>
+<string name="clock_title">Istopwatch</string>
+<string name="clock_start">Bidu</string>
+<string name="clock_reset">Irrisettja</string>
+<string name="clock_pause">Issospendi</string>
+<string name="clock_restart">Irristartja l-</string>
+<string name="clock_times">Darbiet</string>
+<string name="pic_save_path">Issejvja l-mogħdija:</string>
+<string name="no_camera">Il-kamera ma tkunx disponibbli!</string>
+<string name="face_camera_error">Mhux normali li jħarsu quddiem kamera!</string>
+
+    <string name="temperature">It-temperatura</string>
+    <string name="voltage">Vultaġġ</string>
+    <string name="health">Tas-saħħa</string>
+    <string name="good">Tajba</string>
+    <string name="low_temperature">Temperatura baxxa</string>
+    <string name="high_temperature">Temperatura għolja</string>
+    <string name="high_voltage">Vultaġġ għoli</string><string name="bad">Ħażina</string>
+    <string name="technology">Tat-teknoloġija</string>
+    <string name="clean_msg">Clearing up the rubbish %s</string>
+    <string name="clean_now">Perfect,try again later</string>
+    <string name="pd">puhdistettu yhteensä: %1$s</string>
+    <string name="ij">kiihtynyt</string>
+
+</resources>

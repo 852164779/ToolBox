@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">उपकरण बॉक्स</string>
+	<string name="hello_world">हैलो वर्ल्ड!</string>
+	<string name="menu_settings">सेटिंग्स</string>
+	<string name="refresh_normal">सामान्य</string>
+	<string name="current_power">वर्तमान शेष शक्ति</string>
+	<string name="change_screen_light">स्क्रीन चमक नियंत्रण</string>
+	<string name="close_screen_time">स्वत: लॉक स्क्रीन समय</string>
+	<string name="wlan_net">WLAN नेटवर्क</string>
+	<string name="mobile_net">2 जी, 3 जी नेटवर्क</string>
+	<string name="gps">जीपीएस स्थान</string>
+	<string name="bluetooth">ब्लूटूथ</string>
+	<string name="power_management">पावर प्रबंधन</string>
+	<string name="action_settings">सेटिंग्स</string>
+	<string name="history_title">ऐतिहासिक रिकॉर्ड</string>
+	<string name="about">के बारे में</string>
+	<string name="clear_history">रिक्त</string>
+	<string name="calculator_invalid_format">अमान्य स्वरूप</string>
+	<string name="clock_title">स्टॉपवॉच</string>
+	<string name="clock_start">प्रारंभ करें</string>
+	<string name="clock_reset">रीसेट करें</string>
+	<string name="clock_pause">विराम दें</string>
+	<string name="clock_restart">पुनरारंभ करें</string>
+	<string name="clock_times">बार</string>
+	<string name="pic_save_path">पथ में सहेजें:</string>
+	<string name="no_camera">कैमरा उपलब्ध नहीं है!</string>
+	<string name="face_camera_error">असामान्य फ्रंट-फेसिंग कैमरा!</string>
+
+	<string name="temperature">तापमान</string>
+	<string name="voltage">वोल्टेज</string>
+	<string name="health">स्वास्थ्य</string>
+	<string name="good">अच्छा</string>
+	<string name="low_temperature">कम तापमान</string>
+	<string name="high_temperature">उच्च तापमान</string>
+	<string name="high_voltage">उच्च वोल्टेज</string>
+	<string name="bad">ख़राब</string>
+	<string name="technology">प्रौद्योगिकी</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+	<string name="pd">कुल साफ: %1$s</string>
+	<string name="ij">त्वरित</string>
+</resources>

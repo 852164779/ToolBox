@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Werkset</string>
+	<string name="hello_world">Hallo mensen!</string>
+	<string name="menu_settings">Instellingen</string>
+	<string name="refresh_normal">normale</string>
+	<string name="current_power">De huidige resterende macht</string>
+	<string name="change_screen_light">De controle van de helderheid van het scherm</string>
+	<string name="close_screen_time">Automatische lock scherm tijd</string>
+	<string name="wlan_net">WLAN-netwerk</string>
+	<string name="mobile_net">2G / 3G-netwerk</string>
+	<string name="gps">GPS locatie</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Energiebeheer</string>
+	<string name="action_settings">Instellingen</string>
+	<string name="history_title">Historiek van het Instituut</string>
+	<string name="about">over</string>
+	<string name="clear_history">Leeg</string>
+	<string name="calculator_invalid_format">Ongeldig formaat</string>
+	<string name="clock_title">Stopwatch</string>
+	<string name="clock_start">Start</string>
+	<string name="clock_reset">Reset</string>
+	<string name="clock_pause">Pauze</string>
+	<string name="clock_restart">Opnieuw opstarten</string>
+	<string name="clock_times">Tijden</string>
+	<string name="pic_save_path">Pad opslaan:</string>
+	<string name="no_camera">De camera is niet beschikbaar!</string>
+	<string name="face_camera_error">Abnormale voorwaarts gerichte camera!</string>
+
+	<string name="temperature">Temperatuur</string>
+	<string name="voltage">Spanning</string>
+	<string name="health">Gezondheid</string>
+	<string name="good">Goede</string>
+	<string name="low_temperature">Lage temperatuur</string>
+	<string name="high_temperature">Hoge temperatuur</string>
+	<string name="high_voltage">Hoogspanning</string><string name="bad">Slechte</string>
+	<string name="technology">Technologie</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="pd">Totaal Opgeschoond: %1$s</string>
+	<string name="ij">Geboost</string>
+</resources>

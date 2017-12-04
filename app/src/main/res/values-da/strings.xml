@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Værktøjskasse</string>
+	<string name="hello_world">Hej verden!</string>
+	<string name="menu_settings">Indstillinger</string>
+	<string name="refresh_normal">normal</string>
+	<string name="current_power">Den aktuelle resterende magt</string>
+	<string name="change_screen_light">Skærmen lysstyrkekontrol</string>
+	<string name="close_screen_time">Automatiske lås skærm tid</string>
+	<string name="wlan_net">WLAN-netværk</string>
+	<string name="mobile_net">2G / 3G netværk</string>
+	<string name="gps">GPS-position</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Strømstyring</string>
+	<string name="action_settings">Indstillinger</string>
+	<string name="history_title">Historisk oversigt</string>
+	<string name="about">om</string>
+	<string name="clear_history">Tom</string>
+	<string name="calculator_invalid_format">Ugyldigt format</string>
+	<string name="clock_title">Stopur</string>
+	<string name="clock_start">Start</string>
+	<string name="clock_reset">Nulstille</string>
+	<string name="clock_pause">Pause</string>
+	<string name="clock_restart">Genstart</string>
+	<string name="clock_times">Gange</string>
+	<string name="pic_save_path">Gemme sti:</string>
+	<string name="no_camera">Kameraet er ikke tilgængelig!</string>
+	<string name="face_camera_error">Unormal fremadvendte kamera!</string>
+
+	<string name="temperature">Temperatur</string>
+	<string name="voltage">Spænding</string>
+	<string name="health">Sundhed</string>
+	<string name="good">God</string>
+	<string name="low_temperature">Lav temperatur</string>
+	<string name="high_temperature">Høj temperatur</string>
+	<string name="high_voltage">Højspænding</string><string name="bad">Dårlig</string>
+	<string name="technology">Teknologi</string>
+
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+    <string name="ij">fremskyndet</string>
+	<string name="pd">det samlede ryddede: %1$s</string>
+</resources>

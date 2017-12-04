@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="div_top">25dp</dimen>
+    <dimen name="pid_l">15dp</dimen>
+    <dimen name="pid_r">15dp</dimen>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="base_img">45dp</dimen>
+    <dimen name="size_title">22sp</dimen>
+    <dimen name="base_text">14sp</dimen>
+</resources>

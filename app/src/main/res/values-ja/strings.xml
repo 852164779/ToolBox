@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">ツールボックス</string>
+	<string name="hello_world">ハローワールド！</string>
+	<string name="menu_settings">設定</string>
+	<string name="refresh_normal">通常</string>
+	<string name="current_power">現在の残量</string>
+	<string name="change_screen_light">画面の明るさ制御</string>
+	<string name="close_screen_time">画面の自動ロック時間</string>
+	<string name="wlan_net">当ホテルは WLAN ネットワーク</string>
+	<string name="mobile_net">2 G ・ 3 G ネットワーク</string>
+	<string name="gps">Gps による位置情報</string>
+	<string name="bluetooth">ブルートゥース</string>
+	<string name="power_management">電源の管理</string>
+	<string name="action_settings">設定</string>
+	<string name="history_title">歴史的な記録</string>
+	<string name="about">について</string>
+	<string name="clear_history">空</string>
+	<string name="calculator_invalid_format">形式が無効です。</string>
+	<string name="clock_title">ストップウォッチ</string>
+	<string name="clock_start">スタート</string>
+	<string name="clock_reset">リセット</string>
+	<string name="clock_pause">一時停止</string>
+	<string name="clock_restart">再起動</string>
+	<string name="clock_times">回</string>
+	<string name="pic_save_path">パスを保存します。</string>
+	<string name="no_camera">カメラが利用できません。</string>
+	<string name="face_camera_error">異常なフロントに面したカメラ!</string>
+
+	<string name="temperature">温度</string>
+	<string name="voltage">電圧</string>
+	<string name="health">健康</string>
+	<string name="good">よし</string>
+	<string name="low_temperature">低温</string>
+	<string name="high_temperature">高温</string>
+	<string name="high_voltage">高電圧</string><string name="bad">悪い</string>
+	<string name="technology">技術</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="pd">クリーニング 済み合計: %1$s</string>
+	<string name="ij">加速されました</string>
+</resources>

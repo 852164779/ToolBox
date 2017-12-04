@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Εργαλειοθήκη</string>
+	<string name="hello_world">Γεια σου κόσμε!</string>
+	<string name="menu_settings">Ρυθμίσεις</string>
+	<string name="refresh_normal">κανονική</string>
+	<string name="current_power">Τρέχουσα ισχύς που απομένει</string>
+	<string name="change_screen_light">Έλεγχος φωτεινότητας οθόνης</string>
+	<string name="close_screen_time">Αυτόματο κλείδωμα οθόνης χρόνο</string>
+	<string name="wlan_net">Δίκτυο WLAN</string>
+	<string name="mobile_net">Δίκτυο 2G / 3G</string>
+	<string name="gps">GPS τοποθεσία</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Διαχείριση ενέργειας</string>
+	<string name="action_settings">Ρυθμίσεις</string>
+	<string name="history_title">Ιστορικό αρχείο</string>
+	<string name="about">σχετικά με</string>
+	<string name="clear_history">Άδειο</string>
+	<string name="calculator_invalid_format">Μη έγκυρη μορφή</string>
+	<string name="clock_title">Χρονόμετρο</string>
+	<string name="clock_start">Έναρξη</string>
+	<string name="clock_reset">Επαναφορά</string>
+	<string name="clock_pause">Παύση</string>
+	<string name="clock_restart">Επανεκκίνηση</string>
+	<string name="clock_times">Φορές</string>
+	<string name="pic_save_path">Αποθηκεύστε τη διαδρομή:</string>
+	<string name="no_camera">Η κάμερα δεν είναι διαθέσιμη!</string>
+	<string name="face_camera_error">Ανώμαλη μπροστινός-αντιμετωπίζοντας φωτογραφική μηχανή!</string>
+
+	<string name="temperature">Θερμοκρασία</string>
+	<string name="voltage">Τάση</string>
+	<string name="health">Υγεία</string>
+	<string name="good">Καλό</string>
+	<string name="low_temperature">Χαμηλή θερμοκρασία</string>
+	<string name="high_temperature">Υψηλής θερμοκρασίας</string>
+	<string name="high_voltage">Υψηλής τάσης</string><string name="bad">Κακό</string>
+	<string name="technology">Τεχνολογία</string>
+
+
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="ij">Ενισχύθηκε</string>
+	<string name="pd">Σύνολικά καθαρίστηκαν: %1$s</string>
+
+
+</resources>

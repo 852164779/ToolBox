@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">도구 상자</string>
+	<string name="hello_world">전 세계 여러분 안녕하세요!</string>
+	<string name="menu_settings">설정</string>
+	<string name="refresh_normal">일반</string>
+	<string name="current_power">현재 남아 있는 전원</string>
+	<string name="change_screen_light">화면 밝기 제어</string>
+	<string name="close_screen_time">자동 잠금 화면 시간</string>
+	<string name="wlan_net">무선랜 네트워크</string>
+	<string name="mobile_net">2g/3g 네트워크</string>
+	<string name="gps">GPS 위치</string>
+	<string name="bluetooth">블루투스</string>
+	<string name="power_management">전원 관리</string>
+	<string name="action_settings">설정</string>
+	<string name="history_title">역사적 기록</string>
+	<string name="about">에 대 한</string>
+	<string name="clear_history">빈</string>
+	<string name="calculator_invalid_format">잘못 된 형식</string>
+	<string name="clock_title">초시계</string>
+	<string name="clock_start">시작</string>
+	<string name="clock_reset">리셋</string>
+	<string name="clock_pause">일시 중지</string>
+	<string name="clock_restart">다시 시작</string>
+	<string name="clock_times">시간</string>
+	<string name="pic_save_path">저장 경로:</string>
+	<string name="no_camera">카메라는 사용할 수 없습니다!</string>
+	<string name="face_camera_error">비정상적인 전면 카메라!</string>
+
+	<string name="temperature">온도</string>
+	<string name="voltage">전압</string>
+	<string name="health">건강</string>
+	<string name="good">좋은</string>
+	<string name="low_temperature">낮은 온도</string>
+	<string name="high_temperature">높은 온도</string>
+	<string name="high_voltage">높은 전압</string><string name="bad">나쁜</string>
+	<string name="technology">기술</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="ij">부스트 되었습니다</string>
+	<string name="pd">총 정리됨: %1$s</string>
+</resources>

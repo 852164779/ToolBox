@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Araç kutusu</string>
+	<string name="hello_world">Merhaba Dünya!</string>
+	<string name="menu_settings">Ayarlar</string>
+	<string name="refresh_normal">normal</string>
+	<string name="current_power">Geçerli kalan güç</string>
+	<string name="change_screen_light">Ekran Parlaklık kontrolü</string>
+	<string name="close_screen_time">Otomatik kilit ekran zaman</string>
+	<string name="wlan_net">WLAN ağ</string>
+	<string name="mobile_net">2G / 3G ağ</string>
+	<string name="gps">GPS konumu</string>
+	<string name="bluetooth">BlueTooth</string>
+	<string name="power_management">Güç yönetimi</string>
+	<string name="action_settings">Ayarlar</string>
+	<string name="history_title">Tarihi rekor</string>
+	<string name="about">hakkında</string>
+	<string name="clear_history">Boş</string>
+	<string name="calculator_invalid_format">Geçersiz biçim</string>
+	<string name="clock_title">Kronometre</string>
+	<string name="clock_start">Başlat</string>
+	<string name="clock_reset">Sıfırlama</string>
+	<string name="clock_pause">Duraklat</string>
+	<string name="clock_restart">Yeniden başlatma</string>
+	<string name="clock_times">Kez</string>
+	<string name="pic_save_path">Yolunu kaydedin:</string>
+	<string name="no_camera">Kamera kullanılabilir değil!</string>
+	<string name="face_camera_error">Anormal ön-dış yüzey fotoğraf makinesi!</string>
+
+	<string name="temperature">Sıcaklık</string>
+	<string name="voltage">Gerilim</string>
+	<string name="health">Sağlık</string>
+	<string name="good">İyi</string>
+	<string name="low_temperature">Düşük sıcaklık</string>
+	<string name="high_temperature">Yüksek sıcaklık</string>
+	<string name="high_voltage">Yüksek gerilim</string><string name="bad">Kötü</string>
+	<string name="technology">Teknoloji</string>
+	<string name="clean_msg">Clearing up the rubbish %s</string>
+	<string name="clean_now">Perfect,try again later</string>
+
+	<string name="ij">Günçlendirildi</string>
+	<string name="pd">Toplam Temizlenen: %1$s</string>
+</resources>

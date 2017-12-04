@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="te_img_right">#edbe6c</color>
+    <color name="te_img_right_top">#ebfa13</color>
+    <color name="te_img_top">#ef737d</color>
+    <color name="te_img_left_top">#19eaff</color>
+    <color name="te_img_left">#617cff</color>
+    <color name="te_img_left_bottom">#51ff59</color>
+    <color name="te_img_center">#b89bff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#FF888888</color>
+    <color name="battery_middle">#c4830e</color>
+    <color name="battery_height">#49e72a</color>
+    <color name="red">#ff0000</color>
+    <color name="battery_low">#f57777</color>
+
+
+    <item name="white" type="color">#FFFFFFFF</item>
+    <item name="orange_text" type="color">#FF7F24</item>
+    <item name="orange_bg" type="color">#FF9933</item>
+    <item name="gray_btn" type="color">#F2F2F2</item>
+    <item name="gray_shadow" type="color">#999999</item>
+    <item name="gray_text" type="color">#666666</item>
+    <color name="clock_background">#221a1a</color>
+    <color name="clock_restart">#872e2e</color>
+    <color name="blue">#19eaff</color>
+
+    <color name="battery_background">#141c2a</color>
+    <color name="battery_item">#3d4655</color>
+    <color name="battery_text">#748093</color>
+
+    <color name="ring_back">#f1f1f1</color>
+    <color name="ram_back">#1ca0ec</color>
+
+    <color name="base_back">#ff00ddff</color>
+    <color name="warn_green">#24d1c7</color>
+    <color name="warn_yellow">#ffc745</color>
+    <color name="warn_red">#d1301e</color>
+    <color name="base_text">#a9a9a9</color>
+    <color name="base_bottom_text">#3cbcf9</color>
+
+    <color name="click_color">#1f97e7</color>
+    <color name="nomal_color">#00000000</color>
+    <item name="calculator_back" type="color">#D1D1D1</item>
+</resources>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <com.global.toolbox.storage.RippleImageView
+            android:id="@+id/ramLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <com.global.toolbox.storage.ColorfulRingProgressView
+                android:id="@+id/ramProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:type="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/ramProgress"
+                android:layout_alignTop="@+id/ramProgress"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ramText_Pro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:textSize="@dimen/base_text"/>
+
+                    <TextView
+                        android:id="@+id/ramText_Pro_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:textSize="@dimen/base_text"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:id="@+id/ramText_Unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/base_text"
+                        android:textSize="@dimen/base_text"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/ramText_Unit_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/ij"
+                        android:textColor="@color/transparent"
+                        android:textSize="@dimen/base_text"
+                        android:textStyle="normal"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/ramText_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_ram"
+                    android:textColor="@color/base_text"
+                    android:textSize="@dimen/base_text"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/romLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp">
+
+            <com.global.toolbox.storage.ColorfulRingProgressView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/romProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:type="2"/>
+
+            <LinearLayout
+                android:id="@+id/romLayout_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/romProgress"
+                android:layout_alignLeft="@+id/romProgress"
+                android:layout_alignRight="@+id/romProgress"
+                android:layout_alignTop="@+id/romProgress"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/romText_Pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/romText_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_rom"
+                    android:textColor="@color/base_text"
+                    android:textSize="@dimen/base_text"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cpuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp">
+
+            <com.global.toolbox.storage.ColorfulRingProgressView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cpuProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:type="2"/>
+
+            <LinearLayout
+                android:id="@+id/cpuLayout_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cpuProgress"
+                android:layout_alignLeft="@+id/cpuProgress"
+                android:layout_alignRight="@+id/cpuProgress"
+                android:layout_alignTop="@+id/cpuProgress"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cpuText_Pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/cpuText_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_cpu"
+                    android:textColor="@color/base_text"
+                    android:textSize="@dimen/base_text"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/total_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/pd"
+            android:textColor="@color/base_bottom_text"
+            android:textSize="@dimen/base_cache"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <com.global.toolbox.waveview.WaveView
+            android:id="@+id/waveview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/calculator"
+                        android:layout_width="@dimen/base_img"
+                        android:layout_height="@dimen/base_img"
+                        android:onClick="baseOnClick"
+                        android:src="@drawable/icon_jisuan_1"
+                        tools:ignore="ContentDescription"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="#5068b9FF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/mirror"
+                        android:layout_width="@dimen/base_img"
+                        android:layout_height="@dimen/base_img"
+                        android:onClick="baseOnClick"
+                        android:src="@drawable/icon_mirro_1"
+                        tools:ignore="ContentDescription"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="#5068b9FF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/light"
+                        android:layout_width="@dimen/base_img"
+                        android:layout_height="@dimen/base_img"
+                        android:onClick="baseOnClick"
+                        android:src="@drawable/icon_light_1"
+                        tools:ignore="ContentDescription"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#5068b9FF"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/battery"
+                        android:layout_width="@dimen/base_img"
+                        android:layout_height="@dimen/base_img"
+                        android:onClick="baseOnClick"
+                        android:src="@drawable/icon_battery_1"
+                        tools:ignore="ContentDescription"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:background="#5068b9FF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/camera"
+                        android:layout_width="@dimen/base_img"
+                        android:layout_height="@dimen/base_img"
+                        android:onClick="baseOnClick"
+                        android:src="@drawable/icon_zoom_1"
+                        tools:ignore="ContentDescription"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:background="#5068b9FF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/clock"
+                        android:layout_width="@dimen/base_img"
+                        android:layout_height="@dimen/base_img"
+                        android:onClick="baseOnClick"
+                        android:src="@drawable/icon_time_1"
+                        tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
