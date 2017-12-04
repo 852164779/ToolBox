@@ -6,8 +6,8 @@
         <!--<item name="colorPrimary">@color/colorPrimary</item>-->
         <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
         <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
         <item name="android:windowFullscreen">true</item>
-        <!--<item name="android:background">#70000000</item>-->
 
     </style>
 
@@ -46,26 +46,10 @@
     </style>
 
     <style name="BaseActivityTitle" parent="@android:style/Theme.Light">
-        <item name="android:windowTitleSize">40dp</item>
+        <item name="android:windowTitleSize">40sp</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:textStyle">bold</item>
         <item name="android:windowTitleBackgroundStyle">@color/white</item>
-    </style>
-
-    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
-        <!--<item name="android:windowFrame">@color/transparent</item>&lt;!&ndash;边框&ndash;&gt;-->
-        <!--<item name="android:windowIsFloating">true</item>&lt;!&ndash;是否浮现在activity之上&ndash;&gt;-->
-        <!--<item name="android:windowIsTranslucent">true</item>&lt;!&ndash;半透明&ndash;&gt;-->
-        <!--<item name="android:windowNoTitle">true</item>&lt;!&ndash;无标题&ndash;&gt;-->
-        <!--<item name="android:windowBackground">@color/transparent</item>&lt;!&ndash;背景透明&ndash;&gt;-->
-        <!--<item name="android:backgroundDimEnabled">true</item>&lt;!&ndash;模糊&ndash;&gt;-->
-
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:background">#00000000</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:windowIsTranslucent">true</item>
-
     </style>
 
 </resources>

@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center|left"
-        android:paddingLeft="50dp"
+        android:paddingLeft="20dp"
         android:text="@string/app_name"
         android:textColor="@color/ram_back"
         android:textSize="@dimen/size_title"

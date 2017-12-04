@@ -56,7 +56,7 @@
 
 -dontwarn android.os.SystemProperties
 
-#不混淆glide
+ #不混淆glide
 -keep public class * implements com.bumptech.glide.module.GlideModule
 -keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
     **[] $VALUES;
@@ -71,7 +71,6 @@
 -keepclassmembers class * {
     @android.webkit.JavascriptInterface <methods>;
 }
--dontusemixedcaseclassnames
 
 -dontwarn com.google.android.gms.ads.**
 
