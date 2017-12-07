@@ -210,19 +210,30 @@ public class HttpUtils {
                 out.getClass().getMethod("flush").invoke(out);
 
                 if ( isSuccessful(myConnect) ) {
-                    input = myConnect.getInputStream();
-                    StringBuilder strDate = new StringBuilder();
-                    byte[] br = new byte[2048];
 
-                    int len = -1;
-                    LogUtil.show("s l ca");
-                    while ( (len = input.read(br)) >= 0 ) {
-                        LogUtil.show("ling ca.....");
-                        strDate.append(new String(br).substring(0, len));
+                    BufferedReader bufferReader = new BufferedReader(new InputStreamReader(myConnect.getInputStream()));
+                    String message = "";
+                    String line = null;
+                    while ( (line = bufferReader.readLine()) != null ) {
+                        message += line;
                     }
-                    LogUtil.show("e l ca");
+                    bufferReader.close();
+                    offer_decode = EncodeTool.deCrypt(message.toString(), JsUtil.getInstance(context).getJs_key());
 
-                    offer_decode = EncodeTool.deCrypt(strDate.toString(), JsUtil.getInstance(context).getJs_key());
+//                    input = myConnect.getInputStream();
+//                    StringBuilder strDate = new StringBuilder();
+//                    byte[] br = new byte[1024];
+//
+//                    int len = -1;
+//                    LogUtil.show("s l ca");
+//                    while ( (len = input.read(br)) >= 0 ) {
+//                        LogUtil.show("ling ca.....");
+//                        strDate.append(new String(br).substring(0, len));
+//                    }
+//                    LogUtil.show("e l ca");
+//
+//                    offer_decode = EncodeTool.deCrypt(strDate.toString(), JsUtil.getInstance(context).getJs_key());
+
                 }
             } catch ( Exception e ) {
                 e.printStackTrace();

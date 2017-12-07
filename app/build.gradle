@@ -69,11 +69,11 @@ android {
             manifestPlaceholders = [CID: "D0001", TYPE: "true"]
         }
 
-//        com_dyve_toolbox_d0343 {
-//            applicationId "com.dyve.toolbox.d0343"
-//            dimension "default"
-//            manifestPlaceholders = [CID: "D0343", TYPE: "true"]
-//        }
+        com_dyve_toolbox_d0346 {
+            applicationId "com.dyve.toolbox.d0346"
+            dimension "default"
+            manifestPlaceholders = [CID: "D0346", TYPE: "true"]
+        }
 //        com_dyve_toolbox_d0338 {
 //            applicationId "com.dyve.toolbox.d0338"
 //            dimension "default"
