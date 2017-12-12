@@ -4,6 +4,7 @@
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!--访问电话-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <!--悬浮窗口-->
@@ -15,20 +16,23 @@
     <!--改变wifi状态权限-->
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
     <!--位置-->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!--gps-->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <!--屏幕一直唤醒-->
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
     <uses-permission android:name="android.permission.GET_TASKS"/>
+
     <!--监听来电短信权限-->
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
     <uses-permission android:name="android.permission.SEND_SMS"/>
+
     <uses-permission android:name="android.permission.WRITE_OWNER_DATA"/>
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>

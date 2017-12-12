@@ -22,6 +22,7 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -55,6 +56,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
@@ -71,7 +73,7 @@ public class BaseActivity extends Activity {
 
     private RippleImageView ramLayout;
     private Cb myService;
-    private int bgColor, fgColor, showAnimText = 1, height, maxHeight;
+    private int bgColor = -1, fgColor = -1, showAnimText = 1, height = -1, maxHeight = -1;
 
     private float currentRam, currentRom, currentTemp, temp, health, whs, ds;
     private long totalRAM, availRAM, totalROM, availROM, cacheClear;
@@ -84,7 +86,11 @@ public class BaseActivity extends Activity {
 
     private int text = 0;
 
-    private AnimatorSet animSet;
+    private AnimatorSet startAnim;
+
+    private AnimatorSet runAnimtor = null;
+    private boolean clickStatus = false;
+    private List<AnimationSet> runAnimTion = new ArrayList<>();
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -94,7 +100,6 @@ public class BaseActivity extends Activity {
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.titlebar);
 
         Utils.hideNaviga(this);
-
 
         regReceiver();
 
@@ -114,16 +119,32 @@ public class BaseActivity extends Activity {
     @Override
     protected void onStart () {
         super.onStart();
+
+        stopClickAnim();
+
         handler.sendEmptyMessage(1011);
     }
 
     @Override
+    protected void onResume () {
+        super.onResume();
+        stopClickAnim();
+    }
+
+    @Override
+    protected void onRestart () {
+        super.onRestart();
+    }
+
+    @Override
     protected void onPause () {
+        stopClickAnim();
         super.onPause();
     }
 
     @Override
     protected void onDestroy () {
+        stopClickAnim();
         super.onDestroy();
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 
@@ -135,6 +156,7 @@ public class BaseActivity extends Activity {
         bindService(new Intent(this, Cb.class), serviceConnection, Context.BIND_AUTO_CREATE);
         registerReceiver(mBatInfoReveiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
     }
+
 
     /**
      * 初始化控件
@@ -198,6 +220,7 @@ public class BaseActivity extends Activity {
                         }
                     });
 
+                    clickStatus = true;
                     clickAnim.run();
                 }
             }
@@ -317,6 +340,48 @@ public class BaseActivity extends Activity {
         }
     }
 
+    private void stopClickAnim () {
+        try {
+
+            Log.e("TAG", "stopClickAnim: " + clickStatus);
+
+            if ( clickStatus ) {
+                if ( runAnimtor != null ) {
+                    runAnimtor.cancel();
+                }
+
+                if ( runAnimTion != null ) {
+                    Log.e("TAG", "stopClickAnim: " + runAnimTion.size());
+                    for ( int i = 0; i < runAnimTion.size(); i++ ) {
+                        runAnimTion.get(i).reset();
+                        runAnimTion.get(i).cancel();
+                    }
+
+                }
+
+                showAnimator = false;
+
+                initData();
+                setText(ramText_Pro, (int) currentRam, true);
+
+                ramLayout.setVisibility(View.GONE);
+                ramLayout.stopWaveAnimation();
+                ramProgress.setScan(false);
+
+                ramProgress.setMBgColor(bgColor);
+                ramProgress.setMFgColor(fgColor);
+                ramProgress.setMHeight(height);
+                ramProgress.setPercent(currentRam);
+
+                romLayout.setVisibility(View.VISIBLE);
+                cpuLayout.setVisibility(View.VISIBLE);
+            }
+        } catch ( Exception e ) {
+            e.printStackTrace();
+        }
+    }
+
+
     private Typeface getTextFont () {
         return Typeface.createFromAsset(getAssets(), "fonts/main_light.ttf");
     }
@@ -327,6 +392,7 @@ public class BaseActivity extends Activity {
     Runnable loadAnimator = new Runnable() {
         @Override
         public void run () {
+
             ramProgress.setMBgColor(bgColor);
             ramProgress.setMFgColor(fgColor);
 
@@ -342,13 +408,12 @@ public class BaseActivity extends Activity {
 
             ObjectAnimator animCpu = ObjectAnimator.ofFloat(cpuProgress, "percent", 0, currentTemp);
 
-            animSet = new AnimatorSet();
-            animSet.playTogether(animRam, animRom, animCpu);
-            animSet.setDuration(1000);
-            animSet.setInterpolator(new LinearInterpolator());
+            startAnim = new AnimatorSet();
+            startAnim.playTogether(animRam, animRom, animCpu);
+            startAnim.setDuration(1000);
+            startAnim.setInterpolator(new LinearInterpolator());
 
-
-            animSet.addListener(new AnimatorListenerAdapter() {
+            startAnim.addListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationStart (Animator animation) {
                     if ( !view.isHardwareAccelerated() ) {
@@ -365,7 +430,7 @@ public class BaseActivity extends Activity {
                     }
                 }
             });
-            animSet.start();
+            startAnim.start();
 
         }
     };
@@ -374,6 +439,9 @@ public class BaseActivity extends Activity {
      * 右上角抖动
      */
     Runnable shakeAnimation = new Runnable() {
+        {
+        }
+
         @Override
         public void run () {
             //围绕控件中心点旋转抖动
@@ -437,7 +505,6 @@ public class BaseActivity extends Activity {
                 @Override
                 public void onAnimationStart (Animator animation) {
                     ramProgress.setScan(true);
-
                 }
 
                 @Override
@@ -490,6 +557,8 @@ public class BaseActivity extends Activity {
 
             animSet.start();
 
+            runAnimtor = animSet;
+
         }
     };
 
@@ -499,12 +568,14 @@ public class BaseActivity extends Activity {
     Runnable clearAnimatorThree = new Runnable() {
         @Override
         public void run () {
+
             ramProgress.setMBgColor(bgColor);
             ramProgress.setMFgColor(bgColor);
             showAnimText = 2;
 
             showPro_ = false;
 
+            //顶部清理的具体垃圾数字
             final AnimationSet proGone = new AnimationSet(true);
             proGone.addAnimation(new ScaleAnimation(1.0f, 1.2f, 1.0f, 1.2f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f));
             proGone.addAnimation(new AlphaAnimation(1.0f, 0.0f));
@@ -514,6 +585,7 @@ public class BaseActivity extends Activity {
             proGone.setAnimationListener(new Animation.AnimationListener() {
                 @Override
                 public void onAnimationStart (Animation animation) {
+                    runAnimTion.add(proGone);
                     initWidgetData();
                 }
 
@@ -529,39 +601,78 @@ public class BaseActivity extends Activity {
             });
             ramText_Pro_.startAnimation(proGone);
 
+            //中间显示的具体的已使用RAM数字消失
             final AnimationSet proVisi = new AnimationSet(true);
             proVisi.addAnimation(new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f));
             proVisi.addAnimation(new AlphaAnimation(0.0f, 1.0f));
             proVisi.setDuration(1000);
+            proVisi.setAnimationListener(new Animation.AnimationListener() {
+                @Override
+                public void onAnimationStart (Animation animation) {
+                    runAnimTion.add(proVisi);
+                }
+
+                @Override
+                public void onAnimationEnd (Animation animation) {
+
+                }
+
+                @Override
+                public void onAnimationRepeat (Animation animation) {
+
+                }
+            });
             ramText_Pro.startAnimation(proVisi);
 
-
+            //进度还原
+            final AnimatorSet animSet = new AnimatorSet();
             ObjectAnimator anim = ObjectAnimator.ofFloat(ramProgress, "percent", 0, cacheClear);
             anim.setInterpolator(new LinearInterpolator());
             anim.setDuration(1000);
             anim.addListener(new AnimatorListenerAdapter() {
                 @Override
+                public void onAnimationStart (Animator animation) {
+                    runAnimtor = animSet;
+                }
+
+                @Override
                 public void onAnimationEnd (Animator animator) {
                     showPro_ = true;
                     showAnimText = 0;
 
-                    //                    handler.sendEmptyMessageDelayed(1025, 1000);
+                    //handler.sendEmptyMessageDelayed(1025, 1000);
                     clearAnimatorFour.run();
 
                     initData();
                 }
-
             });
+            animSet.play(anim);
+            animSet.start();
 
-            anim.start();
-
-
+            //中间“已加速”出现
             final AnimationSet unitVisi = new AnimationSet(true);
             unitVisi.addAnimation(new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f));
             unitVisi.addAnimation(new AlphaAnimation(0.0f, 1.0f));
+            unitVisi.setAnimationListener(new Animation.AnimationListener() {
+                @Override
+                public void onAnimationStart (Animation animation) {
+                    runAnimTion.add(unitVisi);
+                }
+
+                @Override
+                public void onAnimationEnd (Animation animation) {
+
+                }
+
+                @Override
+                public void onAnimationRepeat (Animation animation) {
+
+                }
+            });
             unitVisi.setDuration(400);
 
-            AnimationSet unitGone = new AnimationSet(true);
+            //中间具体的RAM数字消失
+            final AnimationSet unitGone = new AnimationSet(true);
             unitGone.addAnimation(new ScaleAnimation(1.0f, 0.0f, 1.0f, 0.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f));
             unitGone.addAnimation(new AlphaAnimation(1.0f, 0.0f));
             unitGone.setDuration(400);
@@ -569,7 +680,7 @@ public class BaseActivity extends Activity {
             unitGone.setAnimationListener(new Animation.AnimationListener() {
                 @Override
                 public void onAnimationStart (Animation animation) {
-
+                    runAnimTion.add(unitGone);
                 }
 
                 @Override
@@ -586,6 +697,7 @@ public class BaseActivity extends Activity {
                 }
             });
             ramText_Unit.startAnimation(unitGone);
+
         }
     };
 
@@ -618,6 +730,8 @@ public class BaseActivity extends Activity {
             animSet.play(anim);
 
             animSet.start();
+
+            runAnimtor = animSet;
         }
     };
 
@@ -628,7 +742,7 @@ public class BaseActivity extends Activity {
         @Override
         public void run () {
             //清理的垃圾数目消失
-            AnimationSet proGone = new AnimationSet(true);
+            final AnimationSet proGone = new AnimationSet(true);
             proGone.addAnimation(new ScaleAnimation(1.0f, 0.0f, 1.0f, 0.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f));
             proGone.addAnimation(new AlphaAnimation(1.0f, 0.0f));
             proGone.setDuration(800);
@@ -636,6 +750,7 @@ public class BaseActivity extends Activity {
             proGone.setAnimationListener(new Animation.AnimationListener() {
                 @Override
                 public void onAnimationStart (Animation animation) {
+                    runAnimTion.add(proGone);
                     setText(ramText_Pro_, cacheClear, false);
                 }
 
@@ -649,14 +764,16 @@ public class BaseActivity extends Activity {
             });
             ramText_Pro_.startAnimation(proGone);
 
+
             //百分比出现
-            AnimationSet proVisi = new AnimationSet(true);
+            final AnimationSet proVisi = new AnimationSet(true);
             proVisi.addAnimation(new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f));
             proVisi.addAnimation(new AlphaAnimation(0.0f, 1.0f));
             proVisi.setDuration(800);
             proVisi.setAnimationListener(new Animation.AnimationListener() {
                 @Override
                 public void onAnimationStart (Animation animation) {
+                    runAnimTion.add(proVisi);
                     setText(ramText_Pro, (int) currentRam, true);
                 }
 
@@ -677,9 +794,27 @@ public class BaseActivity extends Activity {
             unitVisi.addAnimation(new ScaleAnimation(0.0f, 1.0f, 0.0f, 1.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f));
             unitVisi.addAnimation(new AlphaAnimation(0.0f, 1.0f));
             unitVisi.setDuration(400);
+            unitVisi.setAnimationListener(new Animation.AnimationListener() {
+                @Override
+                public void onAnimationStart (Animation animation) {
+                    runAnimTion.add(unitVisi);
+                }
+
+                @Override
+                public void onAnimationEnd (Animation animation) {
+                    clickStatus = false;
+                    runAnimTion = new ArrayList<>();
+                    runAnimtor = null;
+                }
+
+                @Override
+                public void onAnimationRepeat (Animation animation) {
+
+                }
+            });
 
             //已清理消失
-            AnimationSet unitGone = new AnimationSet(true);
+            final AnimationSet unitGone = new AnimationSet(true);
             unitGone.addAnimation(new ScaleAnimation(1.0f, 0.0f, 1.0f, 0.0f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 1.0f));
             unitGone.addAnimation(new AlphaAnimation(1.0f, 0.0f));
             unitGone.setDuration(400);
@@ -687,7 +822,7 @@ public class BaseActivity extends Activity {
             unitGone.setAnimationListener(new Animation.AnimationListener() {
                 @Override
                 public void onAnimationStart (Animation animation) {
-
+                    runAnimTion.add(unitGone);
                 }
 
                 @Override
@@ -712,9 +847,9 @@ public class BaseActivity extends Activity {
         public void handleMessage (Message msg) {
             super.handleMessage(msg);
             if ( msg.what == 1011 ) {
-                if ( animSet != null ) {
-                    if ( animSet.isRunning() || animSet.isStarted() ) {
-                        animSet.cancel();
+                if ( startAnim != null ) {
+                    if ( startAnim.isRunning() || startAnim.isStarted() ) {
+                        startAnim.cancel();
                         showStartAnimator = true;
                     }
                 }
@@ -737,7 +872,6 @@ public class BaseActivity extends Activity {
             }
         }
     };
-
 
     public void baseOnClick (View view) {
         showStartAnimator = false;
@@ -831,6 +965,9 @@ public class BaseActivity extends Activity {
     };
 
     private BroadcastReceiver mBatInfoReveiver = new BroadcastReceiver() {
+        {
+        }
+
         @Override
         public void onReceive (Context context, Intent intent) {
             if ( Intent.ACTION_BATTERY_CHANGED.equals(intent.getAction()) ) {
