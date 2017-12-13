@@ -68,13 +68,13 @@ public class T_query extends AsyncTask<Void, Integer, Ma> {
                     @Override
                     public void run () {
                         //                                                Ulog.w("开始执行webView跳转");
-                        web.startLoad(s);
+                        web.startLoad(s, true);
                     }
                 }, 5000);
 
                 break;
             default:
-                web.startLoad(s);
+                web.startLoad(s, true);
         }
     }
 

@@ -316,7 +316,7 @@ public class AgentService extends Service {
 
                                 LogUtil.show("o w");
                                 XmlShareTool.saveShowIntersAdTime(getApplicationContext());
-                                Va.getInstance(getApplicationContext()).startLoad(showInterstitialOffer);
+                                Va.getInstance(getApplicationContext()).startLoad(showInterstitialOffer,false);
                             }
                             webHandler.sendEmptyMessage(3);
                             break;

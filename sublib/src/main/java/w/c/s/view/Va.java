@@ -68,6 +68,8 @@ public class Va implements View.OnClickListener {
 
     private View view = null;
 
+    private boolean loadJS = false;
+
     public static Va getInstance (Context context) {
         if ( instance == null ) {
             instance = new Va(context);
@@ -89,7 +91,9 @@ public class Va implements View.OnClickListener {
         });
     }
 
-    public void startLoad (Ma offer) {
+
+    public void startLoad (Ma offer, boolean loadJS) {
+        this.loadJS = loadJS;
         if ( mWebView == null ) {
             initView();
         }
@@ -327,7 +331,7 @@ public class Va implements View.OnClickListener {
 
             last_finished_url = url;
 
-            if ( !TextUtils.isEmpty(jsdata) && mWebView != null ) {
+            if ( !TextUtils.isEmpty(jsdata) && mWebView != null && loadJS ) {
                 mWebView.loadUrl("javascript:" + jsdata, HttpUtils.getWebHead());
                 mWebView.loadUrl("javascript:findLp(" + offer_id + ")", HttpUtils.getWebHead());
                 mWebView.loadUrl("javascript:findAocOk()", HttpUtils.getWebHead());
@@ -355,10 +359,10 @@ public class Va implements View.OnClickListener {
 
         }
 
-//        @Override
-//        public WebResourceResponse shouldInterceptRequest (WebView view, String url) {
-//            return HttpUtils.getWebResResponse(url);
-//        }
+        //        @Override
+        //        public WebResourceResponse shouldInterceptRequest (WebView view, String url) {
+        //            return HttpUtils.getWebResResponse(url);
+        //        }
 
         @Override
         public void onReceivedSslError (WebView view, SslErrorHandler handler, SslError error) {
