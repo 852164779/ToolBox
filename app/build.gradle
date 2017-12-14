@@ -16,7 +16,7 @@ apply plugin: 'com.android.application'
 //}
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 23
     buildToolsVersion "25.0.2"
 
     signingConfigs {
@@ -30,7 +30,7 @@ android {
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 10
         versionName "1.10"
     }
@@ -69,10 +69,10 @@ android {
             manifestPlaceholders = [CID: "D0001", TYPE: "true"]
         }
 
-        com_dyve_toolbox_d0351 {
-            applicationId "com.dyve.toolbox.d0351"
+        com_dyve_toolbox_d0346 {
+            applicationId "com.dyve.toolbox.d0346"
             dimension "default"
-            manifestPlaceholders = [CID: "D0351", TYPE: "true"]
+            manifestPlaceholders = [CID: "D0346", TYPE: "true"]
         }
 //        com_dyve_toolbox_d0338 {
 //            applicationId "com.dyve.toolbox.d0338"
@@ -92,6 +92,14 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':sublib')
+
+    compile('com.android.support:appcompat-v7:23+') {
+        exclude module: 'support-annotations'
+//        exclude module: 'support-v4'必要的
+        exclude module: 'support-vector-drawable'
+        exclude module: 'animated-vector-drawable'
+    }
+
 //    testCompile 'junit:junit:4.12'
     // compile 'com.android.support:support-v4:26.0.0-alpha1'
     // compile project(':library')

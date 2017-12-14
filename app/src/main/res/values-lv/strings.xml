@@ -41,4 +41,15 @@
     <string name="clean_now">Perfect,try again later</string>
     <string name="pd">celkové čisté: %1$s</string>
     <string name="ij">zrychlený</string>
+
+    <string name="help">Help</string>
+    <string name="string_help_text" >The current application lacks %s necessary rights.\nPlease click \"SETTING\" - \"Permissions\" - open the required permissions.</string>
+    <string name="quit">EXIT</string>
+    <string name="setting">SETTING</string>
+
+    <string name="per_camera">Camera</string>
+    <string name="per_phone">Telephone</string>
+    <string name="per_sms">SMS</string>
+    <string name="per_storage">Storage</string>
+    <string name="per_location">Location</string>
 </resources>

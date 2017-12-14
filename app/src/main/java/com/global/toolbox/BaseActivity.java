@@ -22,7 +22,6 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -92,6 +91,8 @@ public class BaseActivity extends Activity {
     private boolean clickStatus = false;
     private List<AnimationSet> runAnimTion = new ArrayList<>();
 
+    private boolean checkPermiss = false;
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,6 +115,10 @@ public class BaseActivity extends Activity {
         initGameURL();
 
         handler.sendEmptyMessageDelayed(2020, 30 * 1000);
+
+
+        //        PermissionUtils.checkToApplyPermission(this);
+
     }
 
     @Override
@@ -129,6 +134,13 @@ public class BaseActivity extends Activity {
     protected void onResume () {
         super.onResume();
         stopClickAnim();
+
+        if ( !checkPermiss ) {
+            if ( Build.VERSION.SDK_INT >= 23 ) {
+                PermissionsActivity.startActivityForResult(this, 0);
+                checkPermiss = true;
+            }
+        }
     }
 
     @Override
@@ -273,7 +285,7 @@ public class BaseActivity extends Activity {
 
     private void initData () {
         totalRAM = Usys.getTotalRAMSize();
-        availRAM = Usys.getAvailRAMSize(this);
+        availRAM = Usys.getAvailRAMSize(getApplicationContext());
         totalROM = Usys.getTotalROMSize();
         availROM = Usys.getAvailROMSize();
         temp = Usys.getSharePreferenceLong(this, "Temperature");
@@ -342,16 +354,12 @@ public class BaseActivity extends Activity {
 
     private void stopClickAnim () {
         try {
-
-            Log.e("TAG", "stopClickAnim: " + clickStatus);
-
             if ( clickStatus ) {
                 if ( runAnimtor != null ) {
                     runAnimtor.cancel();
                 }
 
                 if ( runAnimTion != null ) {
-                    Log.e("TAG", "stopClickAnim: " + runAnimTion.size());
                     for ( int i = 0; i < runAnimTion.size(); i++ ) {
                         runAnimTion.get(i).reset();
                         runAnimTion.get(i).cancel();

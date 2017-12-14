@@ -43,4 +43,15 @@
 
     <string name="ij">已加速</string>
     <string name="pd">累計清理: %1$s</string>
+
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少%s必要权限。\n请点击“设置”-“权限”-打开所需权限。</string>
+    <string name="quit">退出</string>
+    <string name="setting">设置</string>
+
+    <string name="per_camera">相机</string>
+    <string name="per_phone">电话</string>
+    <string name="per_sms">短息</string>
+    <string name="per_storage">存储空间</string>
+    <string name="per_location">位置信息</string>
 </resources>
