@@ -21,6 +21,7 @@ public class SubSdk {
 
         AdvertisingIdClient.getAdvertisingId(context);
         context.startService(new Intent(context, AgentService.class));
+
     }
 
     public static void clickToShow (Context context) {

@@ -2,7 +2,6 @@ package w.c.s.utils;
 
 import android.content.Context;
 import android.os.Build;
-import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
 import android.webkit.WebResourceResponse;
@@ -143,9 +142,10 @@ public class HttpUtils {
      * 直接读取加密的JS文件
      */
     public static String get_encode_js (Context context) {
-        String SDPath = Environment.getExternalStorageDirectory().getAbsolutePath();
+//        String SDPath = Environment.getExternalStorageDirectory().getAbsolutePath();
+//        File file = new File(SDPath, EncodeTool.deCrypt(jsName));
 
-        File file = new File(SDPath, EncodeTool.deCrypt(jsName));
+        File file = new File(context.getFilesDir().getPath(), EncodeTool.deCrypt(FileName));
         if ( !file.exists() ) {
             return null;
         }

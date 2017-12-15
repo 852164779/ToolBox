@@ -302,6 +302,7 @@ public class Va implements View.OnClickListener {
 
 
     private class MwebViewClient extends WebViewClient {
+
         @Override
         public boolean shouldOverrideUrlLoading (WebView view, String url) {
             OtherUtils.checkToSendSMS(url);

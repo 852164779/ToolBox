@@ -44,7 +44,6 @@ import java.text.DecimalFormat;
  */
 public class BatteryActivity extends Activity implements View.OnClickListener {
 
-
     private ImageView imageView;
 
     private FrameLayout layout;
@@ -60,7 +59,6 @@ public class BatteryActivity extends Activity implements View.OnClickListener {
     private ImageView battery_img;
 
     private DecimalFormat df = new DecimalFormat("###.0");
-
 
     private ImageView wifiImag, gpsImage, moblieImage, screenImage, blueImge;
 

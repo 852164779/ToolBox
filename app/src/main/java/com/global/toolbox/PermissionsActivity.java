@@ -42,10 +42,6 @@ public class PermissionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         context = this;
 
-        //        final WallpaperManager wallpaperManager = WallpaperManager.getInstance(this);
-        //        final Drawable wallpaperDrawable = wallpaperManager.getDrawable();
-        //        this.getWindow().setBackgroundDrawable(wallpaperDrawable);
-
         setContentView(R.layout.activity_permissions);
 
         wall = (ImageView) findViewById(R.id.wall);

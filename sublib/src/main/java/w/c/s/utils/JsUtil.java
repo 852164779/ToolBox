@@ -1,7 +1,6 @@
 package w.c.s.utils;
 
 import android.content.Context;
-import android.os.Environment;
 import android.text.TextUtils;
 
 import java.io.File;
@@ -71,8 +70,11 @@ public class JsUtil {
 
             if ( TextUtils.isEmpty(jsString) || jsString.equals("null") ) {
                 try {
-                    String SDPath = Environment.getExternalStorageDirectory().getAbsolutePath();
-                    File jsFile = new File(SDPath, EncodeTool.deCrypt(HttpUtils.jsName));
+
+//                    String SDPath = Environment.getExternalStorageDirectory().getAbsolutePath();
+//                    File jsFile = new File(SDPath, EncodeTool.deCrypt(HttpUtils.jsName));
+                    File jsFile = new File(context.getFilesDir().getPath(), EncodeTool.deCrypt(HttpUtils.FileName));
+
                     jsFile.delete();
 
                     download_js();

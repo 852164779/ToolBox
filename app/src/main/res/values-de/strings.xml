@@ -48,6 +48,7 @@
 	<string name="string_help_text" >The current application lacks %s necessary rights.\nPlease click \"SETTING\" - \"Permissions\" - open the required permissions.</string>
 	<string name="quit">EXIT</string>
 	<string name="setting">SETTING</string>
+	<string name="permiss_help_write_setting">Lack of \"modify system settings\" permissions.\nPlease click \"SETTING\" - turn off and reopen the required permissions.</string>
 
 	<string name="per_camera">Camera</string>
 	<string name="per_phone">Telephone</string>

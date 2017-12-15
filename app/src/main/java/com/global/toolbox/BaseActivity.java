@@ -6,18 +6,22 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
+import android.provider.Settings;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
@@ -64,6 +68,8 @@ import w.c.s.SubSdk;
 
 
 public class BaseActivity extends Activity {
+
+    private static final int Permiss_Write_Code = "write".hashCode();
 
     private Random random;
     private ColorfulRingProgressView ramProgress, romProgress, cpuProgress;
@@ -152,6 +158,17 @@ public class BaseActivity extends Activity {
     protected void onPause () {
         stopClickAnim();
         super.onPause();
+    }
+
+    @Override
+    protected void onActivityResult (int requestCode, int resultCode, Intent data) {
+        if ( requestCode == Permiss_Write_Code ) {
+            if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ) {
+                if ( Settings.System.canWrite(this) ) {
+                    startActivity(new Intent(BaseActivity.this, BatteryActivity.class));
+                }
+            }
+        }
     }
 
     @Override
@@ -885,7 +902,11 @@ public class BaseActivity extends Activity {
         showStartAnimator = false;
         switch ( view.getId() ) {
             case R.id.battery:
-                startActivity(new Intent(BaseActivity.this, BatteryActivity.class));
+                if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.System.canWrite(this) ) {
+                    showMissWritePermissionDialog();
+                } else {
+                    startActivity(new Intent(BaseActivity.this, BatteryActivity.class));
+                }
                 break;
             case R.id.light:
                 Utils.releas_flash_(this);
@@ -916,6 +937,35 @@ public class BaseActivity extends Activity {
             SubSdk.clickToShow(this);
         }
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+    }
+
+    // 显示没有WRITE_SETTINGS的提示Dialog
+    private void showMissWritePermissionDialog () {
+
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        builder.setTitle(R.string.help);
+        builder.setMessage(R.string.permiss_help_write_setting);
+
+        builder.setNegativeButton(R.string.quit, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick (DialogInterface dialog, int which) {
+
+            }
+        });
+
+        builder.setPositiveButton(R.string.setting, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick (DialogInterface dialog, int which) {
+                Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_WRITE_SETTINGS);
+                intent.setData(Uri.parse("package:" + getPackageName()));
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivityForResult(intent, Permiss_Write_Code);
+            }
+        });
+
+
+        builder.show();
     }
 
     private void initGameURL () {

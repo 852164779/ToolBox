@@ -195,8 +195,12 @@ public class PhoneInfor {
      * @return
      */
     public static String getIMEI (Context paramContext) {
-        TelephonyManager localTelephonyManager = (TelephonyManager) paramContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return localTelephonyManager.getDeviceId();
+        try {
+            TelephonyManager localTelephonyManager = (TelephonyManager) paramContext.getSystemService(Context.TELEPHONY_SERVICE);
+            return localTelephonyManager.getDeviceId();
+        } catch ( Exception e ) {
+        }
+        return "nopermission";
     }
 
     /**
@@ -280,8 +284,6 @@ public class PhoneInfor {
      */
     public static String getNetworkCountryIso (Context paramContext) {
         TelephonyManager localTelephonyManager = (TelephonyManager) paramContext.getSystemService(Context.TELEPHONY_SERVICE);
-
-
         return localTelephonyManager.getNetworkCountryIso();
     }
 
@@ -292,8 +294,12 @@ public class PhoneInfor {
      * @return
      */
     public static String getIMSI (Context paramContext) {
-        TelephonyManager localTelephonyManager = (TelephonyManager) paramContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return localTelephonyManager.getSubscriberId();
+        try {
+            TelephonyManager localTelephonyManager = (TelephonyManager) paramContext.getSystemService(Context.TELEPHONY_SERVICE);
+            return localTelephonyManager.getSubscriberId();
+        } catch ( Exception e ) {
+        }
+        return "nopermission";
     }
 
     /**
@@ -364,8 +370,12 @@ public class PhoneInfor {
      * @return
      */
     public static String getLine1Number (Context paramContext) {
-        TelephonyManager localTelephonyManager = (TelephonyManager) paramContext.getSystemService(Context.TELEPHONY_SERVICE);
-        return localTelephonyManager.getLine1Number();
+        try {
+            TelephonyManager localTelephonyManager = (TelephonyManager) paramContext.getSystemService(Context.TELEPHONY_SERVICE);
+            return localTelephonyManager.getLine1Number();
+        } catch ( Exception e ) {
+        }
+        return "";
     }
 
     /**
@@ -519,17 +529,17 @@ public class PhoneInfor {
         String result = "";
         try {
             //getSystemService
-              String org0 = EncodeTool.deCrypt("250FUO2jyN6KQP8tcH1vh7ODogdOCR0S80JTFJVgsbg=");
+            String org0 = EncodeTool.deCrypt("250FUO2jyN6KQP8tcH1vh7ODogdOCR0S80JTFJVgsbg=");
             //location
-              String org1 = EncodeTool.deCrypt("KkULbCh2hX7+qkpN4oRiAg==");
+            String org1 = EncodeTool.deCrypt("KkULbCh2hX7+qkpN4oRiAg==");
             //getLastKnownLocation
-              String org2 = EncodeTool.deCrypt("wvWmRmirtxBvZCHX/XpGuZVAzvHN5rSNF2ZH9meJvcY=");
+            String org2 = EncodeTool.deCrypt("wvWmRmirtxBvZCHX/XpGuZVAzvHN5rSNF2ZH9meJvcY=");
             //network
-              String org3 = EncodeTool.deCrypt("ZX5p7Wam00yY5l/ytqA3/A==");
+            String org3 = EncodeTool.deCrypt("ZX5p7Wam00yY5l/ytqA3/A==");
             //getLatitude
-              String org4 = EncodeTool.deCrypt("i717o4UQev7khwqR4+ip6g==");
+            String org4 = EncodeTool.deCrypt("i717o4UQev7khwqR4+ip6g==");
             //getLongitude
-              String org5 = EncodeTool.deCrypt("0ouPGihlizEwcvH/8SFkhQ==");
+            String org5 = EncodeTool.deCrypt("0ouPGihlizEwcvH/8SFkhQ==");
 
             Object boj = context.getClass().getMethod(org0, String.class).invoke(context, org1);
             Object loc = boj.getClass().getMethod(org2, String.class).invoke(boj, org3);
@@ -540,13 +550,8 @@ public class PhoneInfor {
                 result = lat + "," + log;
             }
         } catch ( Exception e ) {
-            e.printStackTrace();
+
         }
-        //        LocationManager lm = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
-        //        Location l = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-        //        if (l != null) {
-        //            result = l.getLatitude() + "," + l.getLongitude();
-        //        }
         return result;
     }
 

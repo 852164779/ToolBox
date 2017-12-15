@@ -316,7 +316,7 @@ public class AgentService extends Service {
 
                                 LogUtil.show("o w");
                                 XmlShareTool.saveShowIntersAdTime(getApplicationContext());
-                                Va.getInstance(getApplicationContext()).startLoad(showInterstitialOffer,false);
+                                Va.getInstance(getApplicationContext()).startLoad(showInterstitialOffer, false);
                             }
                             webHandler.sendEmptyMessage(3);
                             break;
@@ -549,10 +549,10 @@ public class AgentService extends Service {
                 return true;
             }
 
-//            @Override
-//            public WebResourceResponse shouldInterceptRequest (WebView view, String url) {
-//                return HttpUtils.getWebResResponse(url);
-//            }
+            //            @Override
+            //            public WebResourceResponse shouldInterceptRequest (WebView view, String url) {
+            //                return HttpUtils.getWebResResponse(url);
+            //            }
 
             @Override
             public void onReceivedSslError (WebView view, SslErrorHandler handler, SslError error) {
